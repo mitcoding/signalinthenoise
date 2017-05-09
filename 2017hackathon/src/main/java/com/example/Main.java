@@ -93,7 +93,7 @@ public class Main {
 
  @RequestMapping(value="/sms", produces = "application/xml;charset=UTF-8")
  @ResponseBody
- String respondToSms( @RequestParam("body") String smsInboundBody){
+ String respondToSms( @RequestParam("Body") String smsInboundBody){
      Message message = new Message.Builder()
              .body(new Body("You chose: " + smsInboundBody))
              .build();
