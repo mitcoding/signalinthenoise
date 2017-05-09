@@ -16,6 +16,10 @@
 
 package com.example;
 
+import com.twilio.twiml.Body;
+import com.twilio.twiml.Message;
+import com.twilio.twiml.MessagingResponse;
+import com.twilio.twiml.TwiMLException;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +29,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -85,4 +91,27 @@ public class Main {
     }
   }
 
-}
+ @RequestMapping(value="/sms", produces = "application/xml;charset=UTF-8")
+ @ResponseBody
+ String respondToSms( @RequestParam("Body") String smsInboundBody){
+     Message message = new Message.Builder()
+             .body(new Body("You chose: " + smsInboundBody))
+             .build();
+
+     MessagingResponse twiml = new MessagingResponse.Builder()
+             .message(message)
+             .build();
+
+     //response.setContentType("application/xml");
+
+     try {
+         //response.getWriter().print(twiml.toXml());
+    	 return(twiml.toXml());
+     } catch (TwiMLException e) {
+         e.printStackTrace();
+     }
+     return "";
+ }
+	 
+ }
+  
