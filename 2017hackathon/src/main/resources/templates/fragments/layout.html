@@ -1,50 +1,2606 @@
-<!doctype html>
-<html th:fragment="layout (template, menu)">
-<head>
-    <title>Java Getting Started on Heroku</title>
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
+<!DOCTYPE html>
+<!--[if gt IE 9]><!--> <html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us" th:fragment="layout (template, menu)"> <!--<![endif]-->
+<!--[if IE 8]> <html class="ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us"> <![endif]-->
+<!--[if IE 9]> <html class="ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us"> <![endif]-->
+<head>   
+        <noscript>
+            <meta http-equiv="Refresh" content="0;url=/global-errors/javascript.html" />
+        </noscript>
+        
+        <meta http-equiv="Content-Style-Type" content="text/css" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+        <link rel="shortcut icon" href="https://www.americanfunds.com/apps/nextgen/docroot/images/favicon/favicon.ico" type="image/vnd.microsoft.icon"/>
+        <link rel="icon" href="https://www.americanfunds.com/apps/nextgen/docroot/images/favicon/favicon.ico" type="image/vnd.microsoft.icon"/>
+        
+        <div id="metaId">
+        
+        
+        
+        
+        <meta property="og:description" content="Find American Funds contact information for account and sales inquiries, wholesalers, area sales representatives and retirement plan counselors." />
+        
+        
+        <meta property="og:title" content="Contact Us" />
+        
+        
+        <meta property="og:url" content="https://www.americanfunds.com/advisor/contact-us.html" />
+        
+          
+        <meta property="twitter:url" content="https://www.americanfunds.com/advisor/contact-us.html" />
+        
+         
+        <meta property="twitter:card" content="summary_large_image" />
+        
+         
+        <meta property="twitter:title" content="Contact Us" />
+        
+         
+        <meta property="twitter:description" content="Find American Funds contact information for account and sales inquiries, wholesalers, area sales representatives and retirement plan counselors." />
+        
+         
+        
+        
+        
+        <meta property="og:locale" content="en_US" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="Find American Funds contact information for account and sales inquiries, wholesalers, area sales representatives and retirement plan counselors." />
+        <meta name="category" content="" />
+        <meta name="type" content="" />
+        
+        
+            
+            
+            
+        
+        </div>
+            
+        
+        
+
+
+
+        
+        
+            <script type="text/javascript">
+            if ( !window.CQ_Analytics ) {
+                window.CQ_Analytics = {};
+            }
+            if ( !CQ_Analytics.TestTarget ) {
+                CQ_Analytics.TestTarget = {};
+            }
+            CQ_Analytics.TestTarget.clientCode = 'capitalgroupcompanie';
+        </script>
+    <script type="text/javascript">CQURLInfo={"requestPath":"https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us","extension":"html","selectors":[],"systemId":"283bd14b-c4e6-494d-bc1c-03668b56ad17","runModes":"aem6,prd,crx3,nosamplecontent,publish,crx3tar"};</script>
+	<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/testandtarget/testandtarget.js"></script>
+
+
+        
+        <link rel="stylesheet" href="https://www.americanfunds.com/apps/cgc-tools/clientlibs/consoles.css" type="text/css"/>
+
+
+<script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+<script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+<script th:src="@{/webjars/angularjs/angular.js}"></script>
+<script th:src="@{/webjars/angular-ui-router/angular-ui-router.js}"></script>
+
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/granite/utils.js"></script>
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/granite/jquery/granite.js"></script>
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/jquery.js"></script>
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/shared.js"></script>
+<script type="text/javascript" src="https://www.americanfunds.com/apps/cgc-tools/clientlibs/consoles.js"></script>
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/granite/lodash/modern.js"></script>
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/personalization/kernel.js"></script>
+<script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("https://www.americanfunds.com/etc/segmentation");
+        CQ_Analytics.ClientContextUtils.init("https://www.americanfunds.com/etc/clientcontext/default", "https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us");
+
+        
+    });
+</script>
+
+        
+        
+
+        
+
+
+
+<script type="text/javascript">function trackMVTImpression() {
+    
+    }</script>
+
+        
+        <title>Contact Us | American Funds</title>
+        
+
+        
+        <link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/clientlibs/vendors.css" type="text/css"/>
+
+
+        <link type="text/css" rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/docroot/styles/fonts.css" data-youshallnotparse="true"/>
+
+        
+        <link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/clientlibs/head.css" type="text/css" data-youshallnotparse="true"/>
+        
+        <link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/clientlibs/msgs-icons.css" type="text/css" data-youshallnotparse="true"/>
+        
+        <link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/clientlibs/head2.css" type="text/css" data-youshallnotparse="true"/>
+        <!--[if lt IE 9]><link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/clientlibs/ie8.css" type="text/css"/>
+<![endif]-->
+        <!--[if gt IE 8]><!--><link rel="stylesheet" type="text/css" href="https://www.americanfunds.com/apps/nextgen/docroot/styles/nextgen-responsive.css" data-youshallnotparse="true"/><!--<![endif]-->
+        <link rel="stylesheet" type="text/css" href="https://www.americanfunds.com/apps/nextgen/docroot/styles/print.css" media="print"/>
+        
+
+        <!--[if lt IE 8]><script>window.location.href = "/global-errors/unsupported-browser.html";</script><![endif]-->
+        
+            
+        <script type="text/javascript" src="https://www.americanfunds.com/apps/nextgen/clientlibs/vendors.js"></script>
+
+
+        <script type="text/javascript" src="https://www.americanfunds.com/apps/nextgen/clientlibs/head.js"></script>
+        
+        
+
+        
+         
+        
+         
+
+        
+        
+        
+        
+            <script src="//assets.adobedtm.com/6402cbf3e8adf66bbf619838a332c8616836b662/satelliteLib-f21d20df4ac18ea960b29ab643291bcde398a6a3.js"></script>
+        
+        
+        
+        
+
+        
+        <!--[if lt IE 9]><script type="text/javascript" src="https://www.americanfunds.com/apps/nextgen/clientlibs/ie8.js"></script>
+<![endif]-->
+        
+<script>
+    var isOUS = false;
+    var jsPath = "";
+    
+        jsPath = "https://www.americanfunds.com/apps/nextgen/clientlibs/scripts/js/prd_adrum_";
+    
+    var cookieVal = getCookie("siteLocale");       
+    pathFound = false;
+    if(cookieVal == "DC1"){
+        jsPath = jsPath+"idc1.js";
+         pathFound = true;
+     } else if(cookieVal == "DC2"){
+        jsPath = jsPath+"idc2.js";
+         pathFound = true;
+     }
+     if(pathFound) {
+              document.write('<scr'+'ipt>');
+              document.write("window['adrum-start-time'] = new Date().getTime()");
+              document.write('</scr'+'ipt>');
+              document.write('<scr'+'ipt type="text/javascript" src="'+jsPath+'">');
+              document.write('</scr'+'ipt>');
+       }
+	//Start of changes done for hiding duplicate meta tages for Proxy dispatch template
+        $( document ).ready(function() {
+            if ($("#com-mod-body").length != 0) {
+                $("#metaId").remove();
+            }
+        });
+	//Endof changes done for hiding duplicate meta tages for Proxy dispatch template 
+</script>
+
+
+	<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"url": "https://www.americanfunds.com",
+		"contactPoint": [{
+			"@type": "ContactPoint",
+			"telephone": "+1-800-421-4225",
+			"contactType": "Customer Service"
+		}]
+	}
+	</script>
+
+
+
+	
 </head>
 
-<body>
-    <nav class="navbar navbar-default navbar-static-top navbar-inverse">
-        <div class="container">
-            <ul class="nav navbar-nav">
-                <li class="active">
-                    <a href="/"><span class="glyphicon glyphicon-home"></span> Home</a>
-                </li>
-                <li>
-                    <a href="https://devcenter.heroku.com/articles/how-heroku-works"><span class="glyphicon glyphicon-user"></span> How Heroku Works</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign"></span> Getting Started Guides <span class="caret"></span></a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-ruby">Getting Started with Ruby on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-nodejs">Getting Started with Node on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-php">Getting Started with PHP on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-python">Getting Started with Python on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-java">Getting Started with Java on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-go">Getting Started with Go on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-clojure">Getting Started with Clojure on Heroku</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-scala">Getting Started with Scala on Heroku</a></li>
-                        <li class="divider"></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-heroku-and-connect-without-local-dev">Getting Started on Heroku with Heroku Connect</a></li>
-                        <li><a href="https://devcenter.heroku.com/articles/getting-started-with-jruby">Getting Started with Ruby on Heroku (Microsoft Windows)</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li class="navbar-right">
-                    <a href="https://devcenter.heroku.com"><span class="glyphicon glyphicon-book"></span> Heroku Dev Center</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div th:replace="${template}"/>
 
-    <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
-    <script th:src="@{/webjars/jquery-ui/jquery-ui.min.js}"></script>
-    <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
-    <script th:src="@{/webjars/angularjs/angular.js}"></script>
-    <script th:src="@{/webjars/angular-ui-router/angular-ui-router.js}"></script>
+
+<body class="advisor language-en">
+	<div class="parbase clientcontext"> 
+ <script type="text/javascript">
+    $CQ(function() {
+        CQ_Analytics.SegmentMgr.loadSegments("https://www.americanfunds.com/etc/segmentation");
+        CQ_Analytics.ClientContextUtils.init("https://www.americanfunds.com/etc/clientcontext/default", "https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us");
+
+        
+    });
+</script> 
+</div> 
+<script>
+	if (CGC) {
+		CGC.updateClientContext(CQ_Analytics);
+	}
+</script> 
+<link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/components/layout/tele-header/clientlibs.css" type="text/css"> 
+<script type="text/javascript" src="https://www.americanfunds.com/apps/nextgen/components/layout/tele-header/clientlibs.js"></script> 
+<!--<div id="tele-height" class="no-print"></div>--> 
+<div id="tele-header" class="no-print" style="display: none;"> 
+ <div class="ns-body container" style="padding: 10px;"> 
+  <img class="tele-thumbnail"> 
+  <span class="tele-title">Your Regional Wholesaler</span> 
+  <span class="tele-name" id="tele-name"><a href="#"></a></span> 
+  <div class="tele-links"> 
+   <!-- 
+        	<a href="#" class="tele-chat">Register for a Webinar</a>
+            <a href="https://www.timetrade.com/token/route/redirector?token=S9P36&Mode=rrobin&sh=1" onclick="return tt.launchWorkflow(this)" class="tele-schedule">Schedule Meeting</a>
+			--> 
+   <a href="#" class="tele-nav-item tele-schedule tele-schedule-click">Schedule Meeting</a> 
+   <a href="#" class="tele-nav-item tele-email tele-email-click" id="tele-email">Email</a> 
+   <a href="#" class="tele-nav-item tele-call tele-call-click" id="tele-call">Call</a> 
+  </div> 
+ </div> 
+</div> 
+<div id="tele-profile" style="display:none"> 
+ <img class="tele-image"> 
+ <br> 
+ <span class="label">Your Regional Wholesaler</span> 
+ <h2 id="tele-profile-name"></h2> 
+ <!-- <div class="status-wrapper"><span class="tele-available"></span> <span class="status">ONLINE</span></div> --> 
+ <div class="greeting"> 
+ </div> 
+ <div id="welcome-message"> 
+  <span class="contact"></span> 
+ </div> 
+ <div class="cg-bootstrap options-wrapper"> 
+  <div class="row"> 
+   <div class="col-md-4 col-sm-12"> 
+    <div class="option tele-schedule-click"> 
+     <a href="#"><img src="https://www.americanfunds.com/apps/nextgen/components/layout/tele-header/clientlibs/img/schedule-lrg.png"></a> 
+     <h3>Schedule</h3> 
+     <div id="appt-message"> 
+      <p>Schedule a phone meeting.</p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="col-md-4 col-sm-12"> 
+    <div class="option tele-call-click"> 
+     <img src="https://www.americanfunds.com/apps/nextgen/components/layout/tele-header/clientlibs/img/phone-lrg.gif"> 
+     <h3>Call</h3> 
+     <div id="phone-message"> 
+      <span class="phone"></span> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="col-md-4 col-sm-12"> 
+    <div class="option tele-email-click"> 
+     <a class="tele-email" href="#"><img src="https://www.americanfunds.com/apps/nextgen/components/layout/tele-header/clientlibs/img/email-lrg.gif"></a> 
+     <div id="email-message"> 
+      <h3 class="tele-name">Email</h3> 
+     </div> Receive a response within 24 hours 
+    </div> 
+   </div> 
+  </div> 
+  <video width="90%" controls> 
+   <source type="video/mp4"> 
+  </video> 
+ </div> 
+</div> 
+<div class="cg-bootstrap tele" style="display:none"> 
+ <div class="modal fade" id="tele-modal" tabindex="-1" role="dialog"> 
+  <div class="modal-dialog" role="document"> 
+   <div class="modal-content"> 
+    <div class="modal-header"> 
+     <a href="#" class="descriptor pull-right tele-close" style="display:none;" data-dismiss="modal">CLOSE X</a> 
+    </div> 
+    <div class="modal-body"> 
+     <img class="tele-image"> 
+     <h2>Welcome!</h2> 
+     <p> I'm <span class="wholesaler-name"></span>, your regional wholesaler. As you browse the site, you'll see that every page gives you the opportunity to email, call, or schedule a meeting with me. I look forward to answering your questions, discussing ideas, and helping you get the most out of the full range of American Funds products and services. </p> 
+     <a class="link_accept">OK, GOT IT!</a> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</div> 
+<div data-dig-nav="Global Navigation"> 
+ <div class="advisor advisorGlobalNavigation parbase"> 
+  <div class="utility-bar utility-bar-inverse utility-bar-static-top noindex"> 
+   <div class="utility-bar-inner"> 
+    <div class="container"> 
+     <div class="h1" style="font-size: 24px">
+       American Funds 
+      <sup>®</sup> 
+     </div> 
+     <button type="button" class="btn btn-navbar three-bar pull-right" data-toggle="collapse" data-target=".nav-collapse, .small-site-nav"> </button> 
+     <div class="nav-collapse collapse"> 
+      <ul class="nav navigation cross-site-nav pull-left"> 
+       <li class=" icon-only"> <a href="https://www.americanfunds.com/advisor" class="home"><span class="icon"></span> </a> </li> 
+       <li data-toggle-mask="true"> <a href="#" class="dropdown-toggle layers" data-toggle="dropdown"><span class="icon"></span>OTHER SITES<span class="arrow"></span></a> 
+        <ul class="dropdown-menu desktop-site-switcher"> 
+         <li> 
+          <div class="site-switch parbase"> 
+           <div class="ns-site-switch cg-bootstrap"> 
+            <div class="container"> 
+             <div class="panels"> 
+              <div class="panel-one" data-switcher-type="af"> 
+               <div class="country-status af"> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 switch-close"> 
+                 <div class="site-switch-close"> 
+                  <a href="#">Close <span>x</span></a> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="column-container"> 
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                 <div class="site-switcher-logo"> 
+                  <a href="#"><img src="https://www.americanfunds.com/content/dam/cgc/tenants/apac/images/CG-logo-sm.png" alt="Capital Group"></a> 
+                 </div> 
+                 <div class="site-switcher-link"> 
+                  <a href="https://www.thecapitalgroup.com/us" data-experience="institutional" data-dig-experience="institutional">Institutions &amp; Consultants</a> 
+                 </div> 
+                 <div class="site-switcher-link"> 
+                  <a href="https://www.thecapitalgroup.com/pcs/" data-experience="pcs" data-dig-experience="pcs">Private Client Services</a> 
+                 </div> 
+                </div> 
+                <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-4" style="background-color: #FFF;"> 
+                 <div class="site-switcher-logo"> 
+                  <a href="#"><img src="https://www.americanfunds.com/content/dam/Shared Content/Images/Logos/Primary/af-logo-transparent.png" alt="American Funds"></a> 
+                 </div> 
+                 <div class="site-switcher-link"> 
+                  <a href="https://www.americanfunds.com/individual" data-experience="individual" data-dig-experience="individual">Individual Investors</a> 
+                 </div> 
+                 <div class="site-switcher-link active"> 
+                  <a href="https://www.americanfunds.com/advisor" data-experience="advisor" data-dig-experience="advisor">Financial Advisors</a> 
+                 </div> 
+                </div> 
+                <div class=" col-xs-4 col-sm-4 col-md-4 col-lg-4" style="background-color: #FFF;"> 
+                 <div class="site-switcher-logo"></div> 
+                 <div class="site-switcher-link"> 
+                  <a href="https://www.americanfunds.com/employer" data-experience="employer" data-dig-experience="employer">Employers &amp; Plan Sponsors</a> 
+                 </div> 
+                 <div class="site-switcher-link"> 
+                  <a href="https://www.americanfunds.com/tpa" data-experience="tpa" data-dig-experience="tpa">Third-Party Administrators</a> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="bottom-links-container"> 
+                <h4>More Capital Group Sites</h4> 
+                <ul class="bottom-links"> 
+                 <li class="sw-panel-two"><a href="https://www.thecapitalgroup.com" data-experience="corporate" data-dig-experience="corporate">Capital Group Worldwide</a><span> (corporate site)</span></li> 
+                 <li class="sw-panel-two"><a href="https://www.thecapitalideas.com" data-experience="contentHub" data-dig-experience="contentHub">Capital Ideas℠</a><span></span></li> 
+                </ul> 
+               </div> 
+               <div class="next-links"> 
+                <a href="#" class="slide-next">Capital Group sites</a> 
+               </div> 
+              </div> 
+              <!-- CG Panel --> 
+              <div class="panel-two" data-switcher-type="cg"> 
+               <div class="country-status"> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"></div> 
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 switch-close"> 
+                 <div class="site-switch-close"> 
+                  <a href="#">Close <span>x</span></a> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="site-selector"> 
+                <div class="site-switcher-logo"> 
+                 <a href="#"><img src="https://www.americanfunds.com/content/dam/cgc/tenants/apac/images/CG-logo-sm.png" alt="American Funds"></a> 
+                </div> 
+                <div class="tabs-left"> 
+                 <ul class="nav nav-tabs col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+                  <li class="active switch-tab switch-tab1"><a href="#switcher-tab1" data-toggle="tab"><span>Americas</span></a></li> 
+                  <li class="switch-tab switch-tab2"><a href="#switcher-tab2" data-toggle="tab"><span>Asia Pacific</span></a></li> 
+                  <li class="switch-tab switch-tab3"><a href="#switcher-tab3" data-toggle="tab"><span>Europe</span></a></li> 
+                 </ul> 
+                 <div class="tab-content col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+                  <div class="tab-pane" id="switch-tab1-content"> 
+                   <ul> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/ca" data-experience="ca" data-dig-experience="ca">Canada</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/us" data-experience="institutional" data-dig-experience="institutional">United States</a><span></span></li> 
+                   </ul> 
+                  </div> 
+                  <div class="tab-pane" id="switch-tab2-content"> 
+                   <ul> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/adviser/au/en" data-experience="au" data-dig-experience="au">Australia &amp; New Zealand</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/sg/en" data-experience="sg" data-dig-experience="sg">Singapore</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/hk/en" data-experience="hk" data-dig-experience="hk">Hong Kong</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/asia/country/taiwan.html" data-experience="tw" data-dig-experience="tw">Taiwan</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/advisor/jp/ja" data-experience="jp" data-dig-experience="jp">Japan</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/asia" data-experience="asia" data-dig-experience="asia">Rest Of Asia</a><span></span></li> 
+                   </ul> 
+                  </div> 
+                  <div class="tab-pane" id="switch-tab3-content"> 
+                   <ul> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/at/de" data-dig-experience="at">Austria</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/lu/fr" data-dig-experience="lu">Luxembourg</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/be/fr" data-dig-experience="be">Belgium</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/nl/en" data-dig-experience="nl">Netherlands</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/dk/en" data-dig-experience="dk">Denmark</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/no/en" data-dig-experience="no">Norway</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/fi/en" data-dig-experience="fi">Finland</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/pt/en" data-dig-experience="pt">Portugal</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/fr/fr" data-dig-experience="fr">France</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/es/es" data-dig-experience="es">Spain</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/de/de" data-dig-experience="de">Germany</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/se/en" data-dig-experience="se">Sweden</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/is/en" data-dig-experience="is">Iceland</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/ch/de" data-dig-experience="ch">Switzerland</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/ie/en" data-dig-experience="ie">Ireland</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/gb/en" data-dig-experience="gb">United Kingdom</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/it/it" data-dig-experience="it">Italy</a><span></span></li> 
+                    <li class="switcher-item sw-panel-two"><a href="https://www.thecapitalgroup.com/not-listed/en" data-dig-experience="eu">Other</a><span></span></li> 
+                   </ul> 
+                  </div> 
+                 </div> 
+                 <!-- /tab-content --> 
+                </div> 
+                <!-- /tabbable --> 
+               </div> 
+               <!-- /col --> 
+               <div class="bottom-links-container"> 
+                <h4>More Capital Group Sites</h4> 
+                <ul class="bottom-links"> 
+                 <li class="sw-panel-two"><a href="https://www.thecapitalgroup.com" data-experience="corporate" data-dig-experience="corporate">Capital Group Worldwide</a><span> (corporate site)</span></li> 
+                 <li class="sw-panel-two"><a href="https://www.thecapitalgroup.com/pm" data-experience="privateMarkets" data-dig-experience="privateMarkets">Private Markets</a><span></span></li> 
+                </ul> 
+               </div> 
+               <div class="next-links"> 
+                <a href="#" class="slide-previous">American Funds sites</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+            <script>
+  var switchPanelDefault = "af";
+  SiteSwitch.init(switchPanelDefault);
+</script> 
+           </div> 
+          </div></li> 
+        </ul> </li> 
+       <li class="site-type"><span><strong>FINANCIAL ADVISORS</strong></span></li> 
+      </ul> 
+      <div class="site-switch parbase"> 
+       <ul class="other-sites small-bp inverse"> 
+        <li> <a href="#" class="dd-other-sites-section subtract"><span class="icon"></span>American Funds</a> 
+         <div class="panel-small" data-switcher-type="cg"> 
+          <ul> 
+           <li><a href="https://www.americanfunds.com/individual" data-experience="individual" data-dig-experience="individual">Individual Investors</a></li> 
+           <li><a href="https://www.americanfunds.com/advisor" data-experience="advisor" data-dig-experience="advisor">Financial Advisors</a></li> 
+           <li><a href="https://www.americanfunds.com/employer" data-experience="employer" data-dig-experience="employer">Employers &amp; Plan Sponsors</a></li> 
+           <li><a href="https://www.americanfunds.com/tpa" data-experience="tpa" data-dig-experience="tpa">Third-Party Administrators</a></li> 
+           <li><a href="https://www.thecapitalgroup.com/us" data-experience="institutional" data-dig-experience="institutional">Institutions &amp; Consultants</a></li> 
+           <li><a href="https://www.thecapitalgroup.com/pcs/" data-experience="pcs" data-dig-experience="pcs">Private Client Services</a></li> 
+          </ul> 
+          <div class="bottom-links-container"> 
+           <h4>More Capital Group Sites</h4> 
+           <ul class="bottom-links"> 
+            <li class="sw-panel-two"><a href="https://www.thecapitalgroup.com" data-experience="corporate" data-dig-experience="corporate">Capital Group Worldwide</a><span> (corporate site)</span></li> 
+            <li class="sw-panel-two"><a href="https://www.thecapitalideas.com" data-experience="contentHub" data-dig-experience="contentHub">Capital Ideas℠</a><span></span></li> 
+           </ul> 
+          </div> 
+         </div> </li> 
+        <li> <a href="#" class="dd-other-sites-section add"><span class="icon"></span>Capital Group</a> 
+         <!-- CG Panel --> 
+         <div class="panel-small" data-switcher-type="cg"> 
+          <div class="site-selector"> 
+           <div class="tabs-left"> 
+            <ul class="nav nav-tabs col-xs-4 col-sm-4 col-md-4 col-lg-4"> 
+             <li class="switch-tab switch-tab1"><a href="#switcher-tab1" data-toggle="tab"><span>Americas</span></a></li> 
+             <li class="switch-tab switch-tab2"><a href="#switcher-tab2" data-toggle="tab"><span>Asia Pacific</span></a></li> 
+             <li class="switch-tab switch-tab3"><a href="#switcher-tab3" data-toggle="tab"><span>Europe</span></a></li> 
+            </ul> 
+            <div class="tab-content col-xs-8 col-sm-8 col-md-8 col-lg-8"> 
+             <div class="tab-pane switch-tab1-content" id="switch-tab1-content"> 
+              <ul> 
+               <li class="back-to-regions"><a href="#" alt="Back to region selection"><span>Back</span></a></li> 
+               <li><a href="https://www.thecapitalgroup.com/ca" data-experience="ca" data-dig-experience="ca">Canada</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/us" data-experience="institutional" data-dig-experience="institutional">United States</a><span></span></li> 
+              </ul> 
+             </div> 
+             <div class="tab-pane switch-tab2-content" id="switch-tab2-content"> 
+              <ul> 
+               <li class="back-to-regions"><a href="#" alt="Back to region selection"><span>Back</span></a></li> 
+               <li><a href="https://www.thecapitalgroup.com/adviser/au/en" data-experience="au" data-dig-experience="au">Australia &amp; New Zealand</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/sg/en" data-experience="sg" data-dig-experience="sg">Singapore</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/hk/en" data-experience="hk" data-dig-experience="hk">Hong Kong</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/asia/country/taiwan.html" data-experience="tw" data-dig-experience="tw">Taiwan</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/advisor/jp/ja" data-experience="jp" data-dig-experience="jp">Japan</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/asia" data-experience="asia" data-dig-experience="asia">Rest Of Asia</a><span></span></li> 
+              </ul> 
+             </div> 
+             <div class="tab-pane switch-tab3-content" id="switch-tab3-content"> 
+              <ul> 
+               <li class="back-to-regions"><a href="#" alt="Back to region selection"><span>Back</span></a></li> 
+               <li><a href="https://www.thecapitalgroup.com/at/de" data-dig-experience="at">Austria</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/lu/fr" data-dig-experience="lu">Luxembourg</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/be/fr" data-dig-experience="be">Belgium</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/nl/en" data-dig-experience="nl">Netherlands</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/dk/en" data-dig-experience="dk">Denmark</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/no/en" data-dig-experience="no">Norway</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/fi/en" data-dig-experience="fi">Finland</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/pt/en" data-dig-experience="pt">Portugal</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/fr/fr" data-dig-experience="fr">France</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/es/es" data-dig-experience="es">Spain</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/de/de" data-dig-experience="de">Germany</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/se/en" data-dig-experience="se">Sweden</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/is/en" data-dig-experience="is">Iceland</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/ch/de" data-dig-experience="ch">Switzerland</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/ie/en" data-dig-experience="ie">Ireland</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/gb/en" data-dig-experience="gb">United Kingdom</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/it/it" data-dig-experience="it">Italy</a><span></span></li> 
+               <li><a href="https://www.thecapitalgroup.com/not-listed/en" data-dig-experience="eu">Other</a><span></span></li> 
+              </ul> 
+             </div> 
+             <ul class="cg-bottom-links"> 
+              <li><h4>More Capital Group Sites</h4></li> 
+              <li><a href="https://www.thecapitalgroup.com" data-dig-experience="corporate">Capital Group Worldwide</a> <span> (corporate site)</span> </li> 
+              <li><a href="https://www.thecapitalgroup.com/pm" data-dig-experience="privateMarkets">Private Markets</a> </li> 
+             </ul> 
+            </div> 
+            <!-- /tab-content --> 
+           </div> 
+           <!-- /tabbable --> 
+          </div> 
+          <!-- /col --> 
+         </div> </li> 
+       </ul> 
+      </div> 
+      <ul class="nav navigation pull-right ns-account-utilities"> 
+       <li> <span class="ns-identification"><span class="identification-adviser-name"></span><span class="identification-firm-name"></span></span> </li> 
+       <li class=""><a href="https://www.americanfunds.com/advisor/contact-us.html" class="phone"><span class="icon"></span>Contact Us</a></li> 
+       <li class="state-site-default state-site-tier-one "><a href="https://www.americanfunds.com/advisor/login.htm?next=/advisor/preferences.htm" class="gear"><span class="icon"></span>Preferences</a></li> 
+       <li class="state-site-defined "><a href="https://www.americanfunds.com/advisor/preferences.htm" class="gear"><span class="icon"></span>Preferences</a></li> 
+       <li> <a href="#" class="dropdown-toggle lock ns-login-toggle" data-toggle="dropdown"> <span class="state-site-default state-site-tier-one state-accounts-default"><span class="icon"></span>Log in / Register<span class="arrow"></span></span> <span class="state-site-defined state-accounts-active"><span class="icon"></span>Log out<span class="arrow"></span></span> </a> 
+        <ul class="dropdown-menu ns-login-dropdown" role="menu"> 
+         <li> 
+          <div> 
+           <h3>American Funds Advisor ID</h3> 
+          </div> 
+          <div class="state-site-default state-site-tier-one"> 
+           <a href="https://www.americanfunds.com/advisor/login.htm" class="lock"><span class="icon"></span>Log in to the Advisor Website</a> 
+          </div> 
+          <div class="state-site-default state-site-tier-one utility-bar-registration"> 
+           <a href="https://www.americanfunds.com/advisor/registration/enter-email.htm" class="lock"><span class="icon"></span>Register</a> 
+          </div> 
+          <div class="state-site-default state-site-tier-one utility-bar-registration-help"> 
+          </div> 
+          <div class="state-site-defined advisor-id"></div> 
+          <div class="state-site-defined"> 
+           <a href="https://www.americanfunds.com/advisor/logout.htm" class="btn btn-small lock"><span class="icon"></span>Log out</a> 
+          </div> </li> 
+         <li class="black10"> 
+          <div> 
+           <h3>Client Accounts (DST Vision ID)</h3> 
+          </div> 
+          <div class="state-accounts-default"> 
+           <a href="https://www.americanfunds.com/advisor/accounts/login.htm" class="lock"><span class="icon"></span>Log in to Client Accounts</a> 
+          </div> 
+          <div class="state-accounts-active accounts-id"></div> 
+          <div class="state-accounts-active"> 
+           <a href="https://www.americanfunds.com/advisor/accounts/logout.htm" class="btn btn-small lock"><span class="icon"></span>Log out</a> 
+          </div> </li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <script>
+    var experience = "advisor", 
+        experienceCookie,
+        defaultExperience;
+    if (window.location.hash !== "" && window.location.hash === '#exp') {
+        defaultExperience = new Cookie('DEFAULT_EXPERIENCE');
+        $.when(defaultExperience.set(experience, 3600 * 24 * 365 * 10)).done(function(){
+            window.location.hash = '';
+        });
+    }
+    if (!Cookie.exists("CURRENT_EXPERIENCE")) {
+        currentExperienceCookie = new Cookie('CURRENT_EXPERIENCE');
+        currentExperienceCookie.set(experience);
+    } else {
+        currentExperienceCookie = new Cookie('CURRENT_EXPERIENCE');
+        if (experience.length > 0 ){
+            if (currentExperienceCookie.get() != experience){
+                currentExperienceCookie.set(experience);
+            }
+        } else {
+            currentExperienceCookie.set("corporate");
+        }
+    }
+    var isOUSCookie = new Cookie('OUS_EXPERIENCE');
+    if (typeof(isOUS) == 'undefined') {
+		isOUSCookie.remove();
+    }
+    else {
+        if(isOUS){
+            isOUSCookie.set(isOUS);
+        } else {
+            isOUSCookie.remove();
+        }
+    }
+    CGC.setCGCUserState();
+</script> 
+ </div> 
+</div> 
+<div class="parbase header"> 
+ <div class="ns-header-wide noindex "> 
+  <div class="ns-outer-control"> 
+   <div class="ns-header container"> 
+    <header> 
+     <div class="row"> 
+      <div class="span2"> 
+       <a href="https://www.americanfunds.com/advisor"><img class="logo" src="https://www.americanfunds.com/content/dam/Shared Content/Images/Logos/Primary/af-logo-transparent.png" alt=""></a> 
+      </div> 
+      <div class="span10"> 
+       <div class="row"> 
+        <div class="span10"> 
+         <ul class="ns-utility-links nav pull-right"> 
+          <li class="cart-container state-site-defined"><a href="https://www.americanfunds.com/advisor/literature/cart.htm" class="cart"><span class="icon"></span><span class="cart-count"></span></a><span class="util-pipe"></span></li> 
+          <li><a href="https://www.americanfunds.com/advisor/literature.htm">Forms &amp; Literature</a><span class="util-pipe"></span></li> 
+          <li class="search-container"> 
+           <div> 
+            <span id="searchTextExpandable">Search</span> 
+            <div class="search searchpar parbase"> 
+             <div class="ns-search cq-searchpromote-search yui-skin-sam"> 
+              <form method="GET" class="SiteSearch" name="SiteSearch" onsubmit="return validateMyForm();" action="https://www.americanfunds.com/advisor/search.html"> 
+               <input type="text" id="q" name="q" class="cgc-search-field" title="Enter a search term or ticker" onclick="textBoxClickFunction();"> 
+               <input type="submit" class="" value=""> 
+               <div id="autocomplete"></div> 
+              </form> 
+             </div> 
+             <script>
+    document.getElementById("searchTextExpandable").innerHTML = 'Search';
+    if ('static' == 'expandable') {
+        
+        if('false'== 'false') {
+        $('.ns-utility-links .search-container .ns-search.cq-searchpromote-search form').addClass("suppressed");
+        $('.ns-utility-links .search-container .ns-search.cq-searchpromote-search').addClass("suppressed");
+        }
+            $('.ns-header .ns-utility-links .search-container').addClass("suppressed");            
+        $('.ns-utility-links .search-container .ns-search form input[type=submit]').addClass("suppressed");
+        if ($('html').hasClass('ie8')) {
+            document.getElementById("q").title = '';
+        }
+        function textBoxClickFunction() {
+            $('.ns-utility-links .search-container div.ns-search form input[type=text]').removeClass("searchHelpTextItalic");
+            var searchText2 = $('.ns-utility-links .search-container div.ns-search .cgc-search-field#q').val();
+            if (searchText2 == '' || searchText2 == 'Enter a search term or ticker') {
+                document.getElementById("q").value = '';
+            }
+        }
+        function validateMyForm() {
+            var searchText1 = $('.ns-utility-links .search-container div.ns-search .cgc-search-field#q').val();         
+            if (searchText1 == '' || searchText1 == 'Enter a search term or ticker') {
+                return false;
+            }
+        }
+        $('.ns-utility-links .search-container .ns-search form input[type=submit]').click(function() {
+            var searchText = $('.ns-utility-links .search-container div.ns-search .cgc-search-field#q').val();
+            if (searchText == '' || searchText == 'Enter a search term or ticker') {
+                if ($(this).closest('.ns-utility-links .search-container .ns-search form').hasClass("suppressed")) {
+                    $(this).closest('.ns-utility-links .search-container .ns-search form').removeClass("suppressed");
+                    $(this).closest('.ns-utility-links .search-container .ns-search.cq-searchpromote-search').animate({
+                        width: "223px"
+                    }, 500, function() {
+                        document.getElementById("q").value = 'Enter a search term or ticker';
+                        $('.ns-utility-links .search-container div.ns-search form input[type=text]').addClass("searchHelpTextItalic");
+                    });
+                } else {
+                    if ($('html').hasClass('ie8')) {
+                        document.getElementById("q").value = '';
+                    }
+                    $(this).closest('.ns-utility-links .search-container .ns-search.cq-searchpromote-search').animate({
+                        width: "0px"
+                    }, 500, function() {
+                        $('.ns-utility-links .search-container .ns-search.cq-searchpromote-search form').addClass("suppressed");
+                    });
+                }
+            }
+        });
+    }
+    //Small breakpoint support
+    $(document).ready(function() {
+        if ('static' == 'expandable') {
+            if ('advisor' == 'privateMarkets') {
+                $('.ns-header.container .small-site-nav .ns-search form input[type=submit]').addClass("greyIcon");
+            }
+            $('.ns-header.container .small-site-nav .ns-search form').addClass("expandable");
+            $('.ns-header.container .small-site-nav .ns-search form input[type=submit]').addClass("expandable");
+        }
+    });
+</script> 
+            </div> 
+           </div> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div class="row"> 
+        <div class="span10 ns-site-nav-placeholder-one"> 
+         <ul class="nav site-nav pull-right"> 
+          <li class="menu-large"> <a href="https://www.americanfunds.com/advisor/accounts/dashboard.htm" class=" " data-dig-nav="Primary Navigation"> <span>CLIENT</span> <span>ACCOUNTS</span> </a> 
+           <div class="ns-sub-menu menu-left" data-dig-nav="Sub Navigation Menu"> 
+            <div class="inner-wrapper sub-menu-header"> 
+             <div class="row"> 
+              <div class="span12"> 
+               <div class="h2-tag-rem">
+                 CLIENT ACCOUNTS 
+                <a href="https://www.americanfunds.com/advisor/accounts/dashboard.htm">See All</a> 
+               </div> 
+               <a href="#" class="ns-sub-menu close-menu">Close <span>x</span></a> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="inner-wrapper inverse"> 
+             <div class="mainparsys parsys"> 
+              <div class="parsys_column cq-colctrl-lt5"> 
+               <div class="parsys_column cq-colctrl-lt5-c0"> 
+                <div class="parbase link-list section"> 
+                 <link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/components/content/link-list/clientlibs.css" type="text/css"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">AMERICAN FUNDS ACCOUNTS</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/accounts/dashboard.htm">Dashboard / Client List</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/accounts/recent-transactions.htm">Recent Transactions</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small"></h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service.html">Account Forms &amp; Guidelines</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c1"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">PARTNER SITES</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href=""></a> 
+                      <div class="99fea0bdc43044b9b3b7d7af616626aa parsys"> 
+                       <div class="parbase richtext section text"> 
+                        <div class="ns-rte "> 
+                         <div class="disclosure-jumplink-class" data-jumplink-type="component" data-jumplink-id="62bf9a9d-48ac-4e45-bb58-e2ab02c9c020"></div> 
+                         <div> 
+                          <p><b>DST Vision</b><br> A link to DST Vision is available on the <a href="https://www.americanfunds.com/advisor/accounts/dashboard.htm" adhocenable="false">Client Accounts</a> page.<br> </p> 
+                         </div> 
+                        </div> 
+                       </div> 
+                      </div> </li> 
+                     <li> <a href="https://myretirement.americanfunds.com/sponsor" target="_blank">PlanPremier®-Bundled PartnerLink®</a> </li> 
+                     <li> <a href="https://planadmin.americanfunds.com" target="_blank">PlanPremier®-TPA PartnerLink®</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c2"> 
+                <div class="recent-accounts parbase section"> 
+                 <div class="ns-recent-accounts"> 
+                  <h3>Recently Viewed Accounts</h3> 
+                  <div class="ns-recent-login state-accounts-default"> 
+                   <p>You must log in to access recently viewed accounts.</p> 
+                   <span class="icon"></span> 
+                   <a href="https://www.americanfunds.com/advisor/accounts/login.htm">Log in to Client Accounts</a> 
+                  </div> 
+                  <div class="ns-no-recent hide state-accounts-active"> 
+                   <p>You have no recently viewed accounts.</p> 
+                  </div> 
+                  <div class="ns-recent-list hide state-accounts-active"> 
+                  </div> 
+                 </div> 
+                 <link rel="stylesheet" href="https://www.americanfunds.com/apps/nextgen/components/content/recent-accounts/clientlibs.css" type="text/css"> 
+                 <script type="text/javascript" src="https://www.americanfunds.com/apps/nextgen/components/content/recent-accounts/clientlibs.js"></script> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+             </div> 
+            </div> 
+           </div> </li> 
+          <li class="menu-large"> <a href="https://www.americanfunds.com/advisor/investments" class=" " data-dig-nav="Primary Navigation"> <span>&nbsp;</span> <span>INVESTMENTS</span> </a> 
+           <div class="ns-sub-menu menu-left" data-dig-nav="Sub Navigation Menu"> 
+            <div class="inner-wrapper sub-menu-header"> 
+             <div class="row"> 
+              <div class="span12"> 
+               <div class="h2-tag-rem">
+                 INVESTMENTS 
+                <a href="https://www.americanfunds.com/advisor/investments">See All</a> 
+               </div> 
+               <a href="#" class="ns-sub-menu close-menu">Close <span>x</span></a> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="inner-wrapper inverse"> 
+             <div class="mainparsys parsys"> 
+              <div class="parsys_column cq-colctrl-lt5"> 
+               <div class="parsys_column cq-colctrl-lt5-c0"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">MUTUAL FUND RESEARCH</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/allfunds?shareclass=a&amp;pricesview=on">Daily Prices &amp; Yields</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/allfunds?pricing=nav&amp;updated=monthly">Returns</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/comparefunds">Compare Funds</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/downloaddata">Download Fund Data</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/fund-literature.htm">Fund Literature</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/target-date-proview.html">Target Date ProView: Evaluate TDFs</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c1"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">MUTUAL FUND RESOURCES</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/historicalprices">Historical Prices</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/historicaldistributions">Historical Distributions</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/investments/share-class-information.html">Share Class Information</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/share-class-cost-comparison-calculator.htm">Share Class Cost Comparison Calculator</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c2"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">OTHER INVESTMENTS</h3> 
+                  </div> 
+                  <div class="description"> 
+                   <p><i>in Products &amp; Solutions</i></p> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/separately-managed-accounts.html">Separately Managed Accounts</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/american-funds-insurance-series.html">Insurance Series</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+              <div class="parbase section media"> 
+               <div class="ns-media-component standard a95fecbd-c361-4706-88bb-2a9ba90d2b24 "> 
+                <div class="option-layout "> 
+                 <div class="media-padding"> 
+                  <div class="disclosure-jumplink-class" data-jumplink-type="image" data-jumplink-id="8f957ca3-323f-44cf-965a-f504e0361ecc"></div> 
+                 </div> 
+                 <div class="option-layout padding-lr-none"> 
+                  <div class="media-image "> 
+                   <div class="image padding-lr-none"> 
+                    <a href="https://www.americanfunds.com/advisor/insights/the-capital-advantage.html" target="_self"> <img src="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/investments/_jcr_content/mainparsys/media.img.jpg/1490166551444.jpg" alt="mega-menu-promo-banner-920x102-overview-031617" title="mega-menu-promo-banner-920x102-overview-031617"> </a> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+               <script>
+        mapEnableFeatures("a95fecbd-c361-4706-88bb-2a9ba90d2b24","","https://www.americanfunds.com/content/dam/cgc/shared-content/images/banners/mega-menu-promo-banner-920x102-overview-031617.jpg");
+</script> 
+              </div> 
+             </div> 
+            </div> 
+           </div> </li> 
+          <li class="menu-large"> <a href="https://www.americanfunds.com/advisor/products.html" class=" " data-dig-nav="Primary Navigation"> <span>PRODUCTS &amp; </span> <span>SOLUTIONS</span> </a> 
+           <div class="ns-sub-menu menu-left" data-dig-nav="Sub Navigation Menu"> 
+            <div class="inner-wrapper sub-menu-header"> 
+             <div class="row"> 
+              <div class="span12"> 
+               <div class="h2-tag-rem">
+                 PRODUCTS &amp; SOLUTIONS 
+                <a href="https://www.americanfunds.com/advisor/products.html">See All</a> 
+               </div> 
+               <a href="#" class="ns-sub-menu close-menu">Close <span>x</span></a> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="inner-wrapper inverse"> 
+             <div class="mainparsys parsys"> 
+              <div class="parsys_column cq-colctrl-lt0"> 
+               <div class="parsys_column cq-colctrl-lt0-c0"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">SOLUTIONS FOR:</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/retirement-income.html">Retirement Income</a> <p>Learn strategies that address a retiree’s withdrawal and longevity needs.</p> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/fixed-income.html">Fixed Income</a> <p>Learn about our fixed income strategies and how they pursue durable outcomes for investors.</p> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt0-c1"> 
+                <div class="parbase section media"> 
+                 <div class="ns-media-component standard adb9f287-6deb-4f7d-9f31-5e1fb683a10d "> 
+                  <div class="option-layout "> 
+                   <div class="media-padding"> 
+                    <div class="disclosure-jumplink-class" data-jumplink-type="image" data-jumplink-id="6fc231ae-9c10-4526-9b9e-991ef35d6c8b"></div> 
+                   </div> 
+                   <div class="option-layout padding-lr-none"> 
+                    <div class="media-image "> 
+                     <div class="image padding-lr-none"> 
+                      <a href="https://www.thecapitalgroup.com/our-approach.html" target="_blank"> <img src="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/products/_jcr_content/mainparsys/media.img.png/1485910907381.png" alt="capital-advantage-441x124" title="capital-advantage-441x124"> </a> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                 <script>
+        mapEnableFeatures("adb9f287-6deb-4f7d-9f31-5e1fb683a10d","","https://www.americanfunds.com/content/dam/cgc/shared-content/images/banners/capital-advantage-441x124.png");
+</script> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+              <div class="parsys_column cq-colctrl-lt5"> 
+               <div class="parsys_column cq-colctrl-lt5-c0"> 
+                <div> 
+                 <div class="mboxDefault" id="content-sites-american-funds-advisor-us-en-menus-and-footers-products-mainparsys-start" style="display:none"> 
+                  <!-- start component DIV --> 
+                  <div> 
+                  </div> 
+                  <div class="parbase link-list section"> 
+                   <div class="ns-link-list-component   "> 
+                    <div class="title"> 
+                     <h3 class="small">INVESTMENT OPTIONS</h3> 
+                    </div> 
+                    <ul class="link-list  "> 
+                     <li> 
+                      <ul> 
+                       <li> <a href="https://www.americanfunds.com/advisor/products/mutual-funds.html">Mutual Funds</a> </li> 
+                       <li> <a href="https://www.americanfunds.com/advisor/products/american-funds-insurance-series.html">Insurance Series</a> </li> 
+                       <li> <a href="https://www.americanfunds.com/advisor/products/separately-managed-accounts.html">Separately Managed Accounts</a> </li> 
+                       <li> <a href="https://www.americanfunds.com/advisor/products/modelportfolios.html">Model Portfolios</a> 
+                        <div class="parsys c3300080eeda4523ae6534673f98f7fa"> 
+                         <div class="parbase richtext section text"> 
+                          <div class="ns-rte "> 
+                           <div class="disclosure-jumplink-class" data-jumplink-type="component" data-jumplink-id="a266815e-5e0e-4d6c-89a6-b1a1f35f1e9f"></div> 
+                           <div> 
+                            <p>&nbsp;</p> 
+                            <p>FUNDS OF FUNDS</p> 
+                            <p><a adhocenable="false" href="https://www.americanfunds.com/advisor/products/american-funds-portfolio-series.html">Portfolio Series</a></p> 
+                            <p><a href="https://www.americanfunds.com/advisor/products/retirement-income-portfolio-series.html" adhocenable="false">Retirement Income Portfolio Series</a></p> 
+                            <p><a adhocenable="false" href="https://www.americanfunds.com/advisor/products/target-date-retirement-series.html">Target Date Retirement Series</a></p> 
+                            <p><a href="https://www.americanfunds.com/advisor/products/target-date-college-series.html" adhocenable="false">College Target Date Series</a></p> 
+                           </div> 
+                          </div> 
+                         </div> 
+                        </div> </li> 
+                      </ul> </li> 
+                    </ul> 
+                    <!-- bottom link --> 
+                   </div> 
+                  </div> 
+                  <div class="end section"> 
+                   <!-- end component div --> 
+                  </div> 
+                  <!-- end mbox default div --> 
+                 </div> 
+                 <script type="text/javascript">
+(function() {
+    // this global function isolates the scopes, in case we have more than one mbox component on the page
+    
+var mboxDef = {id: "content-sites-american-funds-advisor-us-en-menus-and-footers-products-mainparsys-start", name: "Mega_menu_product_links", defined: false,
+    mappings: [{param:'profile.advisorType',ccKey:'profile.advisorType'},{param:'profile.dealerFirmId',ccKey:'profile.dealerFirmId'}],
+    isProfile: ['profile.advisorType','profile.dealerFirmId'],
+    staticParameters: []
+};
+CQ_Analytics.TestTarget.addMbox(mboxDef);
+mboxFactories.get('default').getMboxes().get("Mega_menu_product_links").each(function (mbox) {
+    mbox.clearDefaultDiv();
+});
+// hide default mbox content; hiding just the outer div doesn't work, it will be shown again a bit later
+/* toggleDefaultDivs("hidden"); */
+
+var idFromTarget = "mboxImported-default-" + "Mega_menu_product_links" + "-0";
+var divFromTarget = document.getElementById(idFromTarget);
+
+function toggleDefaultDivs(flag /* "hidden" or "visible" */) {
+    var defaultDivs = document.getElementById("content-sites-american-funds-advisor-us-en-menus-and-footers-products-mainparsys-start").getElementsByTagName("div");
+    for(var i=0; i<defaultDivs.length; i++) {
+        defaultDivs[i].style.visibility=flag;
+    }
+}
+
+function removeDefaultDiv() {
+    var defaultContent = document.getElementById('content-sites-american-funds-advisor-us-en-menus-and-footers-products-mainparsys-start');
+    //debugger;
+    if (mboxFactoryDefault) {
+        var mbox = mboxFactoryDefault.get("Mega_menu_product_links");
+        if (typeof mbox !== "undefined") {
+            var offerDiv = mbox.getDiv();
+            if (offerDiv === null || offerDiv.className === "mboxDefault") {
+                defaultContent.style.display="block";
+                // if we got the default from Target just show our default, no sense in showing theirs
+                if (defaultContent) {
+                    CQ_Analytics.TestTarget.ignoreNextUpdate('Mega_menu_product_links');
+                    toggleDefaultDivs("visible");
+                }
+            } else {
+                // remove the default content because it's only taking up space.
+                if (defaultContent) {
+                    defaultContent.remove();
+                }
+            }
+        } else {
+            defaultContent.style.display="block";
+            toggleDefaultDivs("visible");
+        }
+
+    }
+}
+/* Commenting this out to fix NPR-11718
+if (divFromTarget !== null) {
+    removeDefaultDiv();
+} else {
+    // wait 2s for campaign content to arrive before showing default content
+    setTimeout(function() {
+        removeDefaultDiv();
+    }, 1000)};
+*/
+
+    // end of the global function
+    })();
+</script> 
+                 <!-- end clientlibs div--> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c1"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">RETIREMENT</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/401k-403b.html">401(k)/403(b) Plans</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/simple-ira.html">SIMPLE IRAs</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/sep-ira.html">SEP Plans</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/payroll-deduction-IRAs.html">Payroll Deduction IRAs</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/iras.html">Traditional/Roth IRAs</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c2"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">COLLEGE SAVINGS</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/college-america-529.html">CollegeAmerica 529 Plans</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/coverdell-esa.html">Coverdell Education Savings Plans</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/products/ugma-utma.html">UGMA/UTMA Custodial Accounts</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+             </div> 
+            </div> 
+           </div> </li> 
+          <li class="menu-large"> <a href="https://www.americanfunds.com/advisor/insights.html" class=" " data-dig-nav="Primary Navigation"> <span>&nbsp;</span> <span>INSIGHTS</span> </a> 
+           <div class="ns-sub-menu menu-left" data-dig-nav="Sub Navigation Menu"> 
+            <div class="inner-wrapper sub-menu-header"> 
+             <div class="row"> 
+              <div class="span12"> 
+               <div class="h2-tag-rem">
+                 INSIGHTS 
+                <a href="https://www.americanfunds.com/advisor/insights.html">See All</a> 
+               </div> 
+               <a href="#" class="ns-sub-menu close-menu">Close <span>x</span></a> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="inner-wrapper inverse"> 
+             <div class="mainparsys parsys"> 
+              <div class="parsys_column cq-colctrl-lt8"> 
+               <div class="parsys_column cq-colctrl-lt8-c0"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">FEATURED</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+                <div class="parbase section media"> 
+                 <div class="ns-media-component standard 0d56a432-1707-499b-919b-41b65b276691 "> 
+                  <div class="option-layout border-style-base"> 
+                   <div class="media-padding"> 
+                    <p class="title demi small "> <a href="https://www.americanfunds.com/advisor/insights/investment-insights/2017-outlook.html"> 2017 Outlook<span class="disclosure-references-list"></span> </a> </p> 
+                    <div class="disclosure-jumplink-class" data-jumplink-type="image" data-jumplink-id="ff8162c9-9416-4442-b18c-23b488b019d9"></div> 
+                   </div> 
+                   <div class="option-layout padding-lr-none"> 
+                    <div class="media-image "> 
+                     <div class="image padding-lr-none"> 
+                      <a href="https://www.americanfunds.com/advisor/insights/investment-insights/2017-outlook.html" target="_self"> <img src="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/insights/_jcr_content/mainparsys/media_1536055652.img.jpg/1482866405526.jpg" alt="2017-outlook-229x80" title="2017-outlook-229x80"> </a> 
+                     </div> 
+                    </div> 
+                   </div> 
+                   <div class="media-padding white"> 
+                    <div class="parbase content-utility"> 
+                     <div class="ns-content-utility active" data-base-uri="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/insights/_jcr_content/mainparsys/media_1536055652/content-utility"> 
+                      <script>
+			var loadFacebookSDK = loadFacebookSDK || false;
+		</script> 
+                      <ul> 
+                       <li><a href="https://www.americanfunds.com/advisor/insights/investment-insights/2017-outlook.html" data-link-type="custom" class="custom"><span class="icon"></span>read</a></li> 
+                      </ul> 
+                      <script>
+			
+			ContentUtilityManager.init("content-sites-american-funds-advisor-us-en-menus-and-footers-insights-jcr-content-mainparsys-media-1536055652-content-utility");
+		</script> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                 <script>
+        mapEnableFeatures("0d56a432-1707-499b-919b-41b65b276691","","https://www.americanfunds.com/content/dam/cgc/shared-content/images/banners/2017-outlook-229x80.jpg");
+</script> 
+                </div> 
+                <div class="parbase section media"> 
+                 <div class="ns-media-component standard 1ca8be6e-29a9-4d04-9ef8-e1d08e8617c2 "> 
+                  <div class="option-layout border-style-base"> 
+                   <div class="media-padding"> 
+                    <p class="title demi small "> <a href="https://www.americanfunds.com/advisor/insights/the-capital-advantage.html" data-campaign-code="Promo10556"> The Capital Advantage℠<span class="disclosure-references-list"></span> </a> </p> 
+                    <div class="disclosure-jumplink-class" data-jumplink-type="image" data-jumplink-id="7a22c337-e3c2-4d74-9358-54e8193a8890"></div> 
+                   </div> 
+                   <div class="option-layout padding-lr-none"> 
+                    <div class="media-image "> 
+                     <div class="image padding-lr-none"> 
+                      <a href="https://www.americanfunds.com/advisor/insights/the-capital-advantage.html" target="_self" data-campaign-code="Promo10556"> <img src="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/insights/_jcr_content/mainparsys/media.img.jpg/1482180183104.jpg" alt="mega-menu-promo-thumb_229x80_overview" title="mega-menu-promo-thumb_229x80_overview"> </a> 
+                     </div> 
+                    </div> 
+                   </div> 
+                   <div class="media-padding white"> 
+                    <div class="parbase content-utility"> 
+                     <div class="ns-content-utility active" data-base-uri="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/insights/_jcr_content/mainparsys/media/content-utility"> 
+                      <script>
+			var loadFacebookSDK = loadFacebookSDK || false;
+		</script> 
+                      <ul> 
+                       <li><a href="https://www.americanfunds.com/advisor/insights/the-capital-advantage.html" data-link-type="custom" class="custom" data-campaign-code="Promo10556"><span class="icon"></span>read</a></li> 
+                      </ul> 
+                      <script>
+			
+			ContentUtilityManager.init("content-sites-american-funds-advisor-us-en-menus-and-footers-insights-jcr-content-mainparsys-media-content-utility");
+		</script> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                 <script>
+        mapEnableFeatures("1ca8be6e-29a9-4d04-9ef8-e1d08e8617c2","","https://www.americanfunds.com/content/dam/cgc/shared-content/images/banners/mega-menu-promo-thumb_229x80_overview.jpg");
+</script> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt8-c1"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">CATEGORIES</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/investment-insights.html">Investment Insights</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/market-commentary.html">Market Commentary</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/defined-contribution.html">Defined Contribution Insights</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt8-c2"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">TOPICS</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/the-capital-advantage.html">The Capital Advantage</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/currencies.html">Currencies</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/developed-world.html">Developed World</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/dividends-income.html">Dividends &amp; Income</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/emerging-markets.html">Emerging Markets</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/global.html">Global</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/innovation.html">Innovation</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt8-c3"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small"> &nbsp;</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/international.html">International</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/macroeconomic-outlook.html">Macroeconomic Outlook</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/municipal-bonds.html">Municipal Bonds</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/portfolio-construction.html">Portfolio Construction</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/target-date.html">Target Date</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/taxable-bonds.html">Taxable Bonds</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/insights/united-states.html">United States</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+             </div> 
+            </div> 
+           </div> </li> 
+          <li class="menu-large"> <a href="https://www.americanfunds.com/advisor/tools.html" class=" " data-dig-nav="Primary Navigation"> <span>TOOLS &amp; PRACTICE </span> <span>MANAGEMENT</span> </a> 
+           <div class="ns-sub-menu menu-left" data-dig-nav="Sub Navigation Menu"> 
+            <div class="inner-wrapper sub-menu-header"> 
+             <div class="row"> 
+              <div class="span12"> 
+               <div class="h2-tag-rem">
+                 TOOLS &amp; PRACTICE MANAGEMENT 
+                <a href="https://www.americanfunds.com/advisor/tools.html">See All</a> 
+               </div> 
+               <a href="#" class="ns-sub-menu close-menu">Close <span>x</span></a> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="inner-wrapper inverse"> 
+             <div class="mainparsys parsys"> 
+              <div class="parsys_column cq-colctrl-lt5"> 
+               <div class="parsys_column cq-colctrl-lt5-c0"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">PLANNING TOOLS</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/hypotheticals.htm">Hypotheticals</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/portfolio-resources.htm">Portfolio Resources</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/portfolio-resources/portfolio-analyzer.htm">Portfolio Analyzer</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/price-it-tool.htm">Price-It Tool: Preliminary Fee Quote</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/retirement-plan-cost-comparison-tool.htm">Retirement Plan Cost Comparison Tool</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/planning/target-date-proview.html">Target Date ProView: Evaluate TDFs</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                  <div class="bottom-link hr"> 
+                   <a href="https://www.americanfunds.com/advisor/tools/planning.html" class="arrow-right utility-link"><span class="icon"></span><span class="link-label">MORE PLANNING TOOLS</span></a> 
+                  </div> 
+                 </div> 
+                </div> 
+                <div class="parbase richtext section text"> 
+                 <div class="ns-rte "> 
+                  <div class="disclosure-jumplink-class" data-jumplink-type="component" data-jumplink-id="a5fe0142-7431-4f03-a65b-0184e62b3815"></div> 
+                  <div> 
+                   <h3><a adhocenable="false" href="https://www.americanfunds.com/advisor/tools/policy-spotlight.html">Capital Group&nbsp;Policy Spotlight</a></h3> 
+                   <p></p> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c1"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">CLIENT CONVERSATIONS</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/investing-basics.html">Investing Basics</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/investment-planning.html">Investment Planning</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/college-savings.html">College Savings</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/individual-retirement-planning.html">Individual Retirement Planning</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/market-fluctuations.html">Market Fluctuations</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                  <div class="bottom-link hr"> 
+                   <a href="https://www.americanfunds.com/advisor/tools/client-conversations.html" class="arrow-right utility-link"><span class="icon"></span><span class="link-label">MORE CLIENT CONVERSATIONS</span></a> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c2"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">HOW-TO GUIDES</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">Client Servicing</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/guides/retirement-annual-review.html">Deliver More Effective Retirement Plan Reviews</a> </li> 
+                    </ul> </li> 
+                   <li> 
+                    <div class="link-category"> 
+                    </div> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/guides/conduct-portfolio-review.html">Conduct a Portfolio Review</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">Business Development</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/guides/build-ira-business.html">Build Your IRA Business</a> </li> 
+                    </ul> </li> 
+                   <li> 
+                    <div class="link-category"> 
+                    </div> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tools/guides/conduct-enrollment-meeting.html">Lead an Enrollment Meeting</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                  <div class="bottom-link hr"> 
+                   <a href="https://www.americanfunds.com/advisor/tools/guides.html" class="arrow-right utility-link"><span class="icon"></span><span class="link-label">MORE HOW-TO GUIDES</span></a> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+             </div> 
+            </div> 
+           </div> </li> 
+          <li class="menu-large"> <a href="https://www.americanfunds.com/advisor/service.html" class=" " data-dig-nav="Primary Navigation"> <span>SERVICE</span> <span>CENTER</span> </a> 
+           <div class="ns-sub-menu menu-left" data-dig-nav="Sub Navigation Menu"> 
+            <div class="inner-wrapper sub-menu-header"> 
+             <div class="row"> 
+              <div class="span12"> 
+               <div class="h2-tag-rem">
+                 SERVICE CENTER 
+                <a href="https://www.americanfunds.com/advisor/service.html">See All</a> 
+               </div> 
+               <a href="#" class="ns-sub-menu close-menu">Close <span>x</span></a> 
+              </div> 
+             </div> 
+            </div> 
+            <div class="inner-wrapper inverse"> 
+             <div class="mainparsys parsys"> 
+              <div class="parsys_column cq-colctrl-lt5"> 
+               <div class="parsys_column cq-colctrl-lt5-c0"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">CURRENT</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+                <div class="background parbase section"> 
+                 <div class="capital-blue"> 
+                  <div class="ns-background" style="min-height:px"> 
+                   <div class="backgroundpar parsys"> 
+                    <div class="parbase richtext section text"> 
+                     <div class="ns-rte "> 
+                      <div class="disclosure-jumplink-class" data-jumplink-type="component" data-jumplink-id="4c81345e-c675-4d7b-9f58-04b7d1592a81"></div> 
+                      <div> 
+                       <p><span class="white-txt"><b>STAY INFORMED WITH EMAIL ALERTS</b><br> Sign up for daily or weekly notifications on your book of business.<br> </span></p> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="parbase section content-utility"> 
+                     <div class="ns-content-utility active" data-base-uri="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/service/_jcr_content/mainparsys/background/backgroundpar/content_utility"> 
+                      <script>
+			var loadFacebookSDK = loadFacebookSDK || false;
+		</script> 
+                      <ul> 
+                       <li><a href="https://www.americanfunds.com/advisor/service/account-info/gl/account-activity-notification-types.html" data-link-type="custom" class="custom" data-campaign-code="10645"><span class="icon"></span>LEARN MORE</a></li> 
+                      </ul> 
+                      <script>
+			
+			ContentUtilityManager.init("content-sites-american-funds-advisor-us-en-menus-and-footers-service-jcr-content-mainparsys-background-backgroundpar-content-utility");
+		</script> 
+                     </div> 
+                    </div> 
+                    <div class="parbase richtext section text"> 
+                     <div class="ns-rte "> 
+                      <div class="disclosure-jumplink-class" data-jumplink-type="component" data-jumplink-id="c90b561e-3f02-47fe-b35b-fc34e2eef176"></div> 
+                      <div> 
+                       <hr class="thin white-hr"> 
+                       <p><span class="white-txt"><b>SUBMIT DOCUMENTS ONLINE</b><br> Any paperwork you currently fax can be submitted online.<br> </span></p> 
+                      </div> 
+                     </div> 
+                    </div> 
+                    <div class="parbase section content-utility"> 
+                     <div class="ns-content-utility active" data-base-uri="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/menus-and-footers/service/_jcr_content/mainparsys/background/backgroundpar/content_utility_0"> 
+                      <script>
+			var loadFacebookSDK = loadFacebookSDK || false;
+		</script> 
+                      <ul> 
+                       <li><a href="https://www.americanfunds.com/advisor/esub/upload.htm" data-link-type="custom" class="custom" target="_blank" data-campaign-code="10646"><span class="icon"></span>LEARN MORE</a></li> 
+                      </ul> 
+                      <script>
+			
+			ContentUtilityManager.init("content-sites-american-funds-advisor-us-en-menus-and-footers-service-jcr-content-mainparsys-background-backgroundpar-content-utility-0");
+		</script> 
+                     </div> 
+                    </div> 
+                   </div> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c1"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">ACCOUNT FORMS &amp; GUIDELINES</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/new-account/ov/new-account-setup.html">New Account Setup</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/account/529-account.html">CollegeAmerica 529</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/account/traditional-ira.html">Traditional IRA</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/account/roth-ira.html">Roth IRA</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/account/simple-ira.html">SIMPLE IRA</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/account/individual-account.html">Individual Account</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                  <div class="bottom-link hr"> 
+                   <a href="https://www.americanfunds.com/advisor/service.html" class="arrow-right utility-link"><span class="icon"></span><span class="link-label">More Forms &amp; Guidelines</span></a> 
+                  </div> 
+                 </div> 
+                </div> 
+               </div> 
+               <div class="parsys_column cq-colctrl-lt5-c2"> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">OTHER RESOURCES</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/service/life-events/life-events-checklists.html">Life Event Checklists</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/tax.html">Tax Center</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/literature.htm">Forms &amp; Literature</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+                <div class="parbase link-list section"> 
+                 <div class="ns-link-list-component   "> 
+                  <div class="title"> 
+                   <h3 class="small">CONTACT US</h3> 
+                  </div> 
+                  <ul class="link-list  "> 
+                   <li> 
+                    <ul> 
+                     <li> <a href="https://www.americanfunds.com/advisor/contact-us.html#phone">Call</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/contact-us.html#mail">Mail</a> </li> 
+                     <li> <a href="https://www.americanfunds.com/advisor/esub/upload.htm">Submit Documents Online</a> </li> 
+                    </ul> </li> 
+                  </ul> 
+                  <!-- bottom link --> 
+                 </div> 
+                </div> 
+               </div> 
+              </div> 
+              <div style="clear:both"></div> 
+             </div> 
+            </div> 
+           </div> </li> 
+         </ul> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="row"> 
+      <div class="span12"> 
+       <div class="ns-site-nav-placeholder-two"></div> 
+      </div> 
+     </div> 
+     <div class="row"> 
+      <div class="span12"> 
+       <hr> 
+      </div> 
+     </div> 
+     <ul class="small-site-nav collapse"> 
+      <li class="cart-container state-site-defined"><a href="https://www.americanfunds.com/advisor/literature/cart.htm" class="cart"><span class="icon"></span><span class="cart-count"></span></a><span class="util-pipe"></span></li> 
+      <li><a href="https://www.americanfunds.com/advisor/literature.htm">Forms &amp; Literature</a></li> 
+      <li> 
+       <div class="ns-search cq-searchpromote-search yui-skin-sam"> 
+        <form method="GET" class="SiteSearch" name="SiteSearch" action="https://www.americanfunds.com/advisor/search.html"> 
+         <input type="text" id="q" name="q" class="cgc-search-field" title="Enter a search term or ticker"> 
+         <input type="submit" class="" value=""> 
+         <div id="autocomplete"></div> 
+        </form> 
+       </div> <script>
+    document.getElementById("searchTextExpandable").innerHTML = 'Search';
+    if ('static' == 'expandable') {
+        
+        if('false'== 'false') {
+        $('.ns-utility-links .search-container .ns-search.cq-searchpromote-search form').addClass("suppressed");
+        $('.ns-utility-links .search-container .ns-search.cq-searchpromote-search').addClass("suppressed");
+        }
+            $('.ns-header .ns-utility-links .search-container').addClass("suppressed");            
+        $('.ns-utility-links .search-container .ns-search form input[type=submit]').addClass("suppressed");
+        if ($('html').hasClass('ie8')) {
+            document.getElementById("q").title = '';
+        }
+        function textBoxClickFunction() {
+            $('.ns-utility-links .search-container div.ns-search form input[type=text]').removeClass("searchHelpTextItalic");
+            var searchText2 = $('.ns-utility-links .search-container div.ns-search .cgc-search-field#q').val();
+            if (searchText2 == '' || searchText2 == 'Enter a search term or ticker') {
+                document.getElementById("q").value = '';
+            }
+        }
+        function validateMyForm() {
+            var searchText1 = $('.ns-utility-links .search-container div.ns-search .cgc-search-field#q').val();         
+            if (searchText1 == '' || searchText1 == 'Enter a search term or ticker') {
+                return false;
+            }
+        }
+        $('.ns-utility-links .search-container .ns-search form input[type=submit]').click(function() {
+            var searchText = $('.ns-utility-links .search-container div.ns-search .cgc-search-field#q').val();
+            if (searchText == '' || searchText == 'Enter a search term or ticker') {
+                if ($(this).closest('.ns-utility-links .search-container .ns-search form').hasClass("suppressed")) {
+                    $(this).closest('.ns-utility-links .search-container .ns-search form').removeClass("suppressed");
+                    $(this).closest('.ns-utility-links .search-container .ns-search.cq-searchpromote-search').animate({
+                        width: "223px"
+                    }, 500, function() {
+                        document.getElementById("q").value = 'Enter a search term or ticker';
+                        $('.ns-utility-links .search-container div.ns-search form input[type=text]').addClass("searchHelpTextItalic");
+                    });
+                } else {
+                    if ($('html').hasClass('ie8')) {
+                        document.getElementById("q").value = '';
+                    }
+                    $(this).closest('.ns-utility-links .search-container .ns-search.cq-searchpromote-search').animate({
+                        width: "0px"
+                    }, 500, function() {
+                        $('.ns-utility-links .search-container .ns-search.cq-searchpromote-search form').addClass("suppressed");
+                    });
+                }
+            }
+        });
+    }
+    //Small breakpoint support
+    $(document).ready(function() {
+        if ('static' == 'expandable') {
+            if ('advisor' == 'privateMarkets') {
+                $('.ns-header.container .small-site-nav .ns-search form input[type=submit]').addClass("greyIcon");
+            }
+            $('.ns-header.container .small-site-nav .ns-search form').addClass("expandable");
+            $('.ns-header.container .small-site-nav .ns-search form input[type=submit]').addClass("expandable");
+        }
+    });
+</script> </li> 
+      <li data-dig-nav="Primary Navigation (small breakpoint)" class=""> <a href="https://www.americanfunds.com/advisor/accounts/dashboard.htm">CLIENT ACCOUNTS</a> </li> 
+      <li data-dig-nav="Primary Navigation (small breakpoint)" class=""> <a href="https://www.americanfunds.com/advisor/investments">INVESTMENTS</a> </li> 
+      <li data-dig-nav="Primary Navigation (small breakpoint)" class=""> <a href="https://www.americanfunds.com/advisor/products.html">PRODUCTS &amp; SOLUTIONS</a> </li> 
+      <li data-dig-nav="Primary Navigation (small breakpoint)" class=""> <a href="https://www.americanfunds.com/advisor/insights.html">INSIGHTS</a> </li> 
+      <li data-dig-nav="Primary Navigation (small breakpoint)" class=""> <a href="https://www.americanfunds.com/advisor/tools.html">TOOLS &amp; PRACTICE MANAGEMENT</a> </li> 
+      <li data-dig-nav="Primary Navigation (small breakpoint)" class=""> <a href="https://www.americanfunds.com/advisor/service.html">SERVICE CENTER</a> </li> 
+     </ul> 
+    </header> 
+   </div> 
+  </div> 
+ </div> 
+ <script>
+			Cart.updateCart();
+			Cart.updateCartLink();
+		</script> 
+</div> 
+<div class="parbase emergency message"> 
+</div> 
+<div class="breadcrumb parbase"> 
+</div> 
+<div class="ns-body-wide  ns-title-wide fullwidth standard">
+	<div class="ns-outer-control">
+		<div class="ns-body container">
+			<div class="row">
+				<div class="span12">
+ 					<div th:replace="${template}"/>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+</div> 
+<div class="ns-disclosure-wide noindex" id="page-disclosure"> 
+ <div class="ns-outer-control"> 
+  <div class="ns-disclosure container"> 
+   <div class="row"> 
+    <div class="span12"> 
+     <hr id="disclosurefootnote"> 
+     <div style="display:none;" class="disclosure-list-class" data-disclosoure-list-type="priority"></div> 
+     <p><span class="ns-disclosure"><strong>This material is intended for use by financial professionals or in conjunction with the advice of a financial professional.</strong></span></p> 
+     <p><span class="ns-disclosure"><strong>Investors should carefully consider investment objectives, risks, charges and expenses. This and other important information is contained in the fund&nbsp;<a href="https://www.americanfunds.com/advisor/investments/fund-literature.htm">prospectuses and summary prospectuses</a>, which can be obtained from a financial professional and should be read carefully before investing.</strong></span>&nbsp;</p> 
+     <div style="display:none;" class="disclosure-list-class" data-disclosoure-list-type="footnote"></div> 
+     <div style="display:none;" class="disclosure-list-class" data-disclosoure-list-type="standard"></div> 
+     <div style="display:none;" class="definition-list-class"></div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</div> 
+<div class="footer parbase"> 
+ <div class="footer-wide black10   noindex" data-dig-nav="Footer"> 
+  <div class="ns-outer-control"> 
+   <footer class="container about black10"> 
+    <div class="row"> 
+     <div class="span12"> 
+      <ul> 
+       <li>STAY CONNECTED:</li> 
+       <li> <a href="https://www.americanfunds.com/advisor/contact-us.html">Contact Us</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/preferences/communication-preferences.htm">Sign Up for Email</a> </li> 
+       <li> 
+        <ul class="social-media-badges"> 
+         <li>Follow Us</li> 
+         <li><a href="https://www.americanfunds.com/facebook" target="_blank"><img src="https://www.americanfunds.com/content/dam/Shared Content/Images/Web-Only Images/icons/facebook.png" alt=""></a></li> 
+         <li><a href="https://www.youtube.com/user/americanfunds" target="_blank"><img src="https://www.americanfunds.com/content/dam/Shared Content/Images/Web-Only Images/icons/youtube.png" alt=""></a></li> 
+         <li><a href="https://www.linkedin.com/company/capital-group" target="_blank"><img src="https://www.americanfunds.com/content/dam/Shared Content/Images/Web-Only Images/icons/linkedin.png" alt=""></a></li> 
+         <li><a href="https://twitter.com/americanfunds" target="_blank"><img src="https://www.americanfunds.com/content/dam/Shared Content/Images/Web-Only Images/icons/twitter.png" alt=""></a></li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <div class="row"> 
+     <div class="span12"> 
+      <ul> 
+       <li>ABOUT US:</li> 
+       <li> <a href="https://www.americanfunds.com/advisor/insights/the-capital-advantage.html">The Capital Advantage℠</a> </li> 
+       <li> <a href="https://www.thecapitalgroup.com/our-approach.html" target="_blank">Our Philosophy</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/news.html">News</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/security.html">Security</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/policies-faq.html">Policies</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/media-relations.html">Media Relations</a> </li> 
+       <li> <a href="https://jobs.thecapitalgroup.com" target="_blank">Careers</a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </footer> 
+  </div> 
+ </div> 
+ <div class="parbase footer-menu"> 
+  <div class="footer-wide black40  noindex" data-dig-nav="Footer"> 
+   <div class="ns-outer-control"> 
+    <footer class="container concise-sitemap black40"> 
+     <div class="row"> 
+      <div class="span2 inverse"> 
+       <h5 class="triangle-right"><span class="icon hidden-desktop"></span>CLIENT ACCOUNTS</h5> 
+       <ul style=""> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/accounts/dashboard.htm">Dashboard / Client List</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/accounts/recent-transactions.htm">Recent Transactions</a> </li> 
+        <li class=""> 
+         <div class="rteParsys1 parsys"> 
+         </div> </li> 
+       </ul> 
+      </div> 
+      <div class="span2 inverse"> 
+       <h5 class="triangle-right"><span class="icon hidden-desktop"></span>INVESTMENTS</h5> 
+       <ul style=""> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/investments/allfunds">All American Funds</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/investments/comparefunds">Compare Funds</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/investments/fund-literature.htm">Fund Literature</a> </li> 
+        <li class=""> 
+         <div class="rteParsys2 parsys"> 
+         </div> </li> 
+       </ul> 
+      </div> 
+      <div class="span2 inverse"> 
+       <h5 class="triangle-right"><span class="icon hidden-desktop"></span>PRODUCTS &amp; SOLUTIONS</h5> 
+       <ul style=""> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/products/target-date-retirement-series.html">Target Date Retirement Series®</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/products/american-funds-portfolio-series.html">Portfolio Series</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/products/iras.html">Traditional and Roth IRAs</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/products/simple-ira.html">SIMPLE IRAs</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/products/401k-403b.html">401(k) Plans</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/products/college-america-529.html">CollegeAmerica® 529 Plans</a> </li> 
+        <li class=""> 
+         <div class="rteParsys3 parsys"> 
+         </div> </li> 
+       </ul> 
+      </div> 
+      <div class="span2 inverse"> 
+       <h5 class="triangle-right"><span class="icon hidden-desktop"></span>INSIGHTS</h5> 
+       <ul style=""> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/insights/investment-insights.html">Investment Insights</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/insights/market-commentary.html">Market Commentary</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/insights/defined-contribution.html">Defined Contribution Insights</a> </li> 
+        <li class=""> 
+         <div class="rteParsys4 parsys"> 
+         </div> </li> 
+       </ul> 
+      </div> 
+      <div class="span2 inverse"> 
+       <h5 class="triangle-right"><span class="icon hidden-desktop"></span>TOOLS &amp; PRACTICE MANAGEMENT</h5> 
+       <ul style=""> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/tools/planning.html">Planning Tools</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/tools/guides.html">How-To Guides</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/tools/client-conversations.html">Client Conversations</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/tools/events.html">Events</a> </li> 
+        <li class=""> 
+         <div class="rteParsys5 parsys"> 
+         </div> </li> 
+       </ul> 
+      </div> 
+      <div class="span2 inverse"> 
+       <h5 class="triangle-right"><span class="icon hidden-desktop"></span>SERVICE CENTER</h5> 
+       <ul style=""> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/service.html">Account Forms &amp; Guidelines</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/service/life-events/life-events-checklists.html">Life Event Checklists</a> </li> 
+        <li class=""> <a href="https://www.americanfunds.com/advisor/tax.html">Tax Center</a> </li> 
+        <li class=""> 
+         <div class="rteParsys6 parsys"> 
+         </div> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </footer> 
+   </div> 
+  </div> 
+ </div> 
+ <div class="footer-wide black10  noindex" data-dig-nav="Footer"> 
+  <div class="ns-outer-control"> 
+   <footer class="container legal black10 "> 
+    <div class="row"> 
+     <div class="span12"> 
+      <h5>Multiple Perspectives. One Approach.®</h5> 
+     </div> 
+    </div> 
+    <div class="row"> 
+     <div class="span6"> 
+      <p><a href="https://www.americanfunds.com/advisor/trademarks.html" adhocenable="false">Copyright</a> © 2017 American Funds Distributors, Inc. All Rights Reserved.</p> 
+      <div style="margin-bottom: 30px; margin-left: 10px; font-size: .857em;"> 
+       <a id="_bapw-link" href="http://info.evidon.com/pub_info/8241?v=1" target="_blank" style="text-decoration:none !important"><img src="https://cdn.betrad.com/pub/icon1.png" id="_bapw-icon" style="border:0 !important;display:inline !important;vertical-align:middle !important" height="14"><span style="vertical-align:middle !important"> AdChoices</span></a> 
+       <script>/*<![CDATA[*/(function(){function f(n){var r=new Image;r.src=o+"l.betrad.com/pub/p.gif?pid="+e+"&ocid="+t+"&i"+n+"=1&mb="+(a?"2":"0")+"&r="+Math.random()}var e=8241,t=4122,n=!1,r=document,i=r.getElementById("_bapw-link"),s=r.location.protocol=="https:",o=(s?"https":"http")+"://",u=window._bap_p_overrides,a=u&&u.hasOwnProperty(e)&&u[e].mobile;i.onclick=function(){return f("c"),!0},f("i")})();/*]]>*/</script> 
+      </div> 
+     </div> 
+     <div class="span6"> 
+      <ul class="nav footer-nav"> 
+       <li> <a href="https://www.americanfunds.com/advisor/privacy.html">PRIVACY</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/portfolio-agreement.html">Portfolio Agreement</a> </li> 
+       <li> <a href="https://www.americanfunds.com/advisor/business-continuity.html">Business Continuity</a> </li> 
+       <li> <a href="https://www.thecapitalgroup.com/" target="_blank">Capital Group Worldwide</a> </li> 
+      </ul> 
+     </div> 
+    </div> 
+   </footer> 
+  </div> 
+ </div> 
+</div> 
+<div id="modal-mask"></div> 
+<div id="fb-root"></div> 
+<div class="modal-template parbase cgc-modal"> 
+ <script id="ns-modal-template" type="text/x-handlebars-template">
+
+<div class="ns-modal{{isDisclaimerModal}} hide" id="{{modalId}}" tabindex="-1">
+	<div class="modal-dialog">
+		<div class="ns-modal-content">
+			<div class="ns-modal-header">
+				<a href="#" class="descriptor pull-right" data-dismiss="modal">Close<span>x</span></a>
+				<h4 class="h3">{{modalTitle}} <span class="ns-modal-title-disclosure-ref"></span></h4>
+			</div>
+			<div class="ns-modal-body">
+				
+			</div>
+		</div>
+	</div>
+</div>
+</script> 
+</div> 
+<script id="asyncHook"></script> 
+<script type="text/javascript" src="https://www.americanfunds.com/apps/nextgen/clientlibs/foot.js"></script> 
+<script>
+	var feedbackSampleRate = new Cookie("CG_OO_SAMPLE_RATE");
+	feedbackSampleRate.set(3);
+</script> 
+<script class="modalScriptIncl"></script> 
+<script language="javascript" charset="windows-1252" src="https://www.americanfunds.com/apps/nextgen/docroot/third-party/onlineopinionV5/advisor/oo_engine.js"></script> 
+<script language="javascript" charset="windows-1252" src="https://www.americanfunds.com/apps/nextgen/docroot/third-party/onlineopinionV5/advisor/oo_conf.js"></script> 
+<script>try{_satellite.pageBottom();}catch(e){}</script> 
+<style>
+	#cg-navigate-away-modal{
+		max-width: 460px;
+	}
+	#cg-navigate-away-modal .link_cancel, #cg-navigate-away-modal .link_accept{
+		font: 14px/18px "Avenir Next LT W01 Demi",Arial,sans-serif; 
+		padding: 9px 15px;  
+		text-align: center;
+		cursor: pointer;
+		margin: 5px;
+	}
+	#cg-navigate-away-modal .link_cancel{
+		background-color: #99d7f2;
+		background-image: linear-gradient(to bottom, #ccebf9, #99d7f2);
+		color: #000 !important;  
+		display: inline-block;
+		text-transform: uppercase;
+		border: 1px solid #99d7f2;
+	}
+	#cg-navigate-away-modal .link_accept:hover{
+		background-color: #66c2ec !important;
+		background-image: none !important;
+	}
+	#cg-navigate-away-modal .link_cancel:hover{
+		background-color: #ccebf9 !important;
+		background-image: none !important;
+	}
+	#cg-navigate-away-modal .link_accept{
+		background-color: #009adf;
+		background-image: linear-gradient(to bottom, #33aee5, #009adf);
+		color: #fff !important;  
+		display: inline-block;
+		text-transform: uppercase;
+		border: 1px solid #009adf;
+	}
+	#cg-navigate-away-modal .caption{
+		padding: 10px;
+	    text-align: right;
+	}
+	#cg-navigate-away-modal .modal-spacing{
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-height: 250px;
+		padding-right: 10px;
+	}
+</style> 
+<script>
+	$(function(){
+		$("a[data-navigate-away]").click(function(e){
+			var linkWithAlert = $(this);
+			e.preventDefault();
+			$.ajax({
+				  url: "https://www.americanfunds.com/bin/notificationdialogservlet?path=" + linkWithAlert.attr("data-navigate-away"),
+					success: function(r){
+						var response = r.data;
+						var modal = $("#cg-navigate-away-modal");
+						$(".ns-modal-header h3", modal).html(response.title);
+						$(".modal-spacing", modal).html(response.text);
+						$(".link_cancel", modal).html(response.cancelBtnText);
+						$(".link_accept", modal).html(response.acceptBtnText);
+                   		modal.modal("show");
+                   		$(".ns-modal-backdrop").off();
+        				$(".ns-modal-backdrop").height($(document).height()); 
+                   		
+						$(".link_cancel", modal).click(function(){
+			            	modal.modal("hide");
+			            	$(".link_accept", modal).unbind();
+			            });
+						
+						$(".ns-modal-header a", modal).click(function(){
+							$(".link_accept", modal).unbind();
+						});
+						
+		                $(".link_accept", modal).click(function(){
+		                	if(linkWithAlert.attr("target") == "_blank"){
+		                		window.open (linkWithAlert.attr("href"));
+		                		modal.modal("hide");
+		                	}else{
+		                    	window.location = linkWithAlert.attr("href");
+		                	}
+		                });
+					}
+				});
+		});
+	});
+</script> 
+<div class="ns-modal hide in " id="cg-navigate-away-modal" tabindex="-1" data-backdrop="static" aria-hidden="false"> 
+ <div class="modal-dialog"> 
+  <div class="ns-modal-content"> 
+   <div class="ns-modal-header"> 
+    <a href="#" class="descriptor pull-right" data-dismiss="modal">Close<span>x</span></a> 
+    <h4 class="h3"> <span class="ns-modal-title-disclosure-ref"></span></h4> 
+   </div> 
+   <div class="ns-modal-body"> 
+    <div class="modal-spacing"></div> 
+   </div> 
+   <div class="caption"> 
+    <a class="link_cancel"></a> 
+    <a class="link_accept"></a> 
+   </div> 
+  </div> 
+ </div> 
+</div> 
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/sitecatalyst/sitecatalyst.js"></script> 
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/sitecatalyst/util.js"></script> 
+<script type="text/javascript" src="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/_jcr_content/analytics.sitecatalyst.js"></script> 
+<script type="text/javascript" src="https://www.americanfunds.com/etc/clientlibs/foundation/sitecatalyst/plugins.js"></script> 
+<script>
+;
+(function($, window, Analytics, CQ_Analytics) {
+	function CG_collect() {
+		var
+			DELIMITER = "\u2026",
+			recordedEvents = {},
+			store = CQ_Analytics.StoreRegistry.getStore("eventdata"),
+			initEvents = store.getProperty("events")
+		;
+		
+		initEvents = initEvents ? initEvents.split(DELIMITER) : [];
+		
+		$("*[record], *[data-event-record]").each(function() {
+			var
+				$this = $(this),
+				settings = $this.attr("data-event-record") || $this.attr("record"),
+				result = eval("record(" + settings + ", true)"),
+				event = result[0],
+				data = result[1];
+			
+				recordedEvents[event] = true;
+				$.each(data, function(key, value) {
+					store.setProperty(key, value);
+				});
+		});
+		
+		$.each(recordedEvents, function(key, value) {
+			initEvents.push(key);
+		});
+		store.setProperty("events", initEvents.join(DELIMITER));
+	}
+
+	function CG_customTrack(link) {
+		var
+			events = link.getAttribute('adhocevents') || "",
+			evars = link.getAttribute('adhocevars') || "",
+			$campaignTag = $(link).closest('[data-campaign-code]'),
+			data = $campaignTag.data('cg.analytics'),
+			campaignCode = $campaignTag.attr('data-campaign-code'),
+			updatedVars = null
+		;
+
+		if (campaignCode && Analytics && Analytics.updateCampaignClickAemAttributes) {
+			data = $.extend({triggered: true}, data);
+			$campaignTag.data('cg.analytics', data);
+			updatedVars = Analytics.updateCampaignClickAemAttributes({
+				adhocevents: events,
+				adhocevars: evars
+			}, campaignCode);
+			events = updatedVars.adhocevents;
+			evars = updatedVars.adhocevars;
+		}
+		if (events || evars) {
+			// set up direct references to datastores for use in expressions
+			for (var store in this.stores)
+				try {
+					eval("var " + store + "=this.stores[store].data");
+				} catch(e) {
+				}
+			// evaluate evars using direct references to stores
+			try {
+				eval("evars = {" + evars + "}");
+			} catch(e) {
+			}
+			CQ_Analytics.Sitecatalyst.saveEvars();
+			try {
+				var linkTrackVars = [];
+				if (events.length > 0) {
+					s.linkTrackEvents = s.events = events;
+					linkTrackVars.push('events');
+				}
+				for (var key in evars) {
+					linkTrackVars.push(key);
+					var value = "'" + evars[key].replace(/'/g, "\\u0027") + "'";
+					this.setEvar(key, value);
+				}
+				if (linkTrackVars.length > 0)
+					s.linkTrackVars = linkTrackVars.join(',');
+				this.trackLink({options: { obj: link}});
+			} finally {
+				CQ_Analytics.Sitecatalyst.restoreEvars();
+			}
+		}
+	}
+	
+	CQ_Analytics.Sitecatalyst.collect = CG_collect;
+	CQ_Analytics.Sitecatalyst.customTrack = CG_customTrack;
+})(
+	jQuery,
+	window,
+	(window.Analytics || null), // Adding "window.... || null" to handle when Analytics is not defined, such as in non-NextGen sites.
+	CQ_Analytics
+);
+/************************** CONFIG SECTION **************************/
+/* You may add or alter any code config here. */
+/* E-commerce Config */
+/* Timeparting config variables */
+var d1=new Date();s.currentYear=d1.getFullYear();s.dstStart=new Date(s.currentYear,2,1);var day1=s.dstStart.getDay();if(day1==0)
+{s.dstStart.setDate(s.dstStart.getDate() + 7);}else{s.dstStart.setDate(s.dstStart.getDate() + 7+(7-day1));}
+s.dstEnd=new Date(s.currentYear,10,1);var day2=s.dstEnd.getDay();if(day2==0){s.dstEnd.setDate(s.dstEnd.getDate());}
+else{s.dstEnd.setDate(s.dstEnd.getDate() + (7-day2));}
+
+/************************** PLUGINS SECTION *************************/
+/* You may insert any plugins you wish to use here.				 */
+
+/*
+ * Plugin: getPreviousValue_v1.0 - return previous value of designated
+ *   variable (requires split utility)
+ *
+ * @param v Variable
+ * @param c Cookie name
+ * @param el Value
+ */
+s.getPreviousValue=new Function("v","c","el",""
++"var s=this,t=new Date,i,j,r='';t.setTime(t.getTime()+1800000);if(el"
++"){if(s.events){i=s.split(el,',');j=s.split(s.events,',');for(x in i"
++"){for(y in j){if(i[x]==j[y]){if(s.c_r(c)) r=s.c_r(c);v?s.c_w(c,v,t)"
++":s.c_w(c,'no value',t);return r}}}}}else{if(s.c_r(c)) r=s.c_r(c);v?"
++"s.c_w(c,v,t):s.c_w(c,'no value',t);return r}");
+/*
+ * Utility Function: split v1.5 - split a string (JS 1.0 compatible)
+ */
+s.split=new Function("l","d",""
++"var i,x=0,a=new Array;while(l){i=l.indexOf(d);i=i>-1?i:l.length;a[x"
++"++]=l.substring(0,i);l=l.substring(i+d.length);}return a");
+/*
+ * Utility clearVars v0.1 - clear variable values (requires split 1.5)
+ */
+s.clearVars=new Function("l","f",""
++"var s=this,vl,la,vla;l=l?l:'';f=f?f:'';vl='pageName,purchaseID,chan"
++"nel,server,pageType,campaign,state,zip,events,products';for(var n=1"
++";n<251;n++)vl+=',prop'+n+',eVar'+n+',hier'+n+',list'+n;if(l&&(f==1||f==2)){if("
++"f==1){vl=l}if(f==2){la=s.split(l,',');vla=s.split(vl,',');vl='';for"
++"(x in la){for(y in vla){if(la[x]==vla[y]){vla[y]=''}}}for(y in vla)"
++"{vl+=vla[y]?','+vla[y]:'';}}s.pt(vl,',','p_clr',0);return true}else"
++" if(l==''&&f==''){s.pt(vl,',','p_clr',0);return true}else{return fa"
++"lse}");
+s.p_clr=new Function("t","var s=this;s[t]=''");
+/*
+ * Plugin Utility: apl v1.1
+ */
+s.apl=new Function("L","v","d","u",""
++"var s=this,m=0;if(!L)L='';if(u){var i,n,a=s.split(L,d);for(i=0;i<a."
++"length;i++){n=a[i];m=m||(u==1?(n==v):(n.toLowerCase()==v.toLowerCas"
++"e()));}}if(!m)L=L?L+d+v:v;return L");
+/*
+* Plugin: getNewRepeat 1.2 - Returns whether user is new or repeat
+*/
+s.getNewRepeat=new Function("d","cn",""
++"var s=this,e=new Date(),cval,sval,ct=e.getTime();d=d?d:30;cn=cn?cn:"
++"'s_nr';e.setTime(ct+d*24*60*60*1000);cval=s.c_r(cn);if(cval.length="
++"=0){s.c_w(cn,ct+'-New',e);return'New';}sval=s.split(cval,'-');if(ct"
++"-sval[0]<30*60*1000&&sval[1]=='New'){s.c_w(cn,ct+'-New',e);return'N"
++"ew';}else{s.c_w(cn,ct+'-Repeat',e);return'Repeat';}");
+/*
+ * Plugin: getQueryParam 2.3
+ */
+s.getQueryParam=new Function("p","d","u",""
++"var s=this,v='',i,t;d=d?d:'';u=u?u:(s.pageURL?s.pageURL:s.wd.locati"
++"on);if(u=='f')u=s.gtfs().location;while(p){i=p.indexOf(',');i=i<0?p"
++".length:i;t=s.p_gpv(p.substring(0,i),u+'');if(t){t=t.indexOf('#')>-"
++"1?t.substring(0,t.indexOf('#')):t;}if(t)v+=v?d+t:t;p=p.substring(i="
++"=p.length?i:i+1)}return v");
+s.p_gpv=new Function("k","u",""
++"var s=this,v='',i=u.indexOf('?'),q;if(k&&i>-1){q=u.substring(i+1);v"
++"=s.pt(q,'&','p_gvf',k)}return v");
+s.p_gvf=new Function("t","k",""
++"if(t){var s=this,i=t.indexOf('='),p=i<0?t:t.substring(0,i),v=i<0?'T"
++"rue':t.substring(i+1);if(p.toLowerCase()==k.toLowerCase())return s."
++"epa(v)}return ''");
+
+/*
+ * Plugin: getValOnce
+ */
+s.getValOnce=new Function("v","c","e",""
++"var s=this,k=s.c_r(c),a=new Date;e=e?e:0;if(v){a.setTime(a.getTime("
++")+e*86400000);s.c_w(c,v,e?a:0);}return v==k?'':v");
+
+/*
+ * Do not make any changes to this portion of the plug-in code.
+ * Plugin: getTimeParting 2.0 - Set timeparting values based on time zone
+ */
+s.getTimeParting=new Function("t","z",""
++"var s=this,cy;dc=new Date('1/1/2000');"
++"if(dc.getDay()!=6||dc.getMonth()!=0){return'Data Not Available'}"
++"else{;z=parseFloat(z);var dsts=new Date(s.dstStart);"
++"var dste=new Date(s.dstEnd);fl=dste;cd=new Date();if(cd>dsts&&cd<fl)"
++"{z=z+1}else{z=z};utc=cd.getTime()+(cd.getTimezoneOffset()*60000);"
++"tz=new Date(utc + (3600000*z));thisy=tz.getFullYear();"
++"var days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday',"
++"'Saturday'];if(thisy!=s.currentYear){return'Data Not Available'}else{;"
++"thish=tz.getHours();thismin=tz.getMinutes();thisd=tz.getDay();"
++"var dow=days[thisd];var ap='AM';var dt='Weekday';var mint='00';"
++"if(thismin>30){mint='30'}if(thish>=12){ap='PM';thish=thish-12};"
++"if (thish==0){thish=12};if(thisd==6||thisd==0){dt='Weekend'};"
++"var timestring=thish+':'+mint+ap;if(t=='h'){return timestring}"
++"if(t=='d'){return dow};if(t=='w'){return dt}}};");
+
+/*
+* TNT Integration Plugin v1.0
+*/
+s.trackTNT =new Function("v","p","b",""
++"var s=this,n='s_tnt',p=p?p:n,v=v?v:n,r='',pm=false,b=b?b:true;if(s."
++"getQueryParam){pm=s.getQueryParam(p);}if(pm){r+=(pm+',');}if(s.wd[v"
++"]!=undefined){r+=s.wd[v];}if(b){s.wd[v]='';}return r;");
+
+/****************************** MODULE SECTION *****************************/
+/* Module: Media */
+s.m_Media_c="var m=s.m_i('Media');if(m.completeByCloseOffset==undefined)m.completeByCloseOffset=1;if(m.completeCloseOffsetThreshold==undefined)m.completeCloseOffsetThreshold=1;m.cn=function(n){var m="
++"this;return m.s.rep(m.s.rep(m.s.rep(n,\"\\n\",''),\"\\r\",''),'--**--','')};m.open=function(n,l,p,b){var m=this,i=new Object,tm=new Date,a='',x;n=m.cn(n);if(!l)l=-1;if(n&&p){if(!m.l)m.l=new Object;"
++"if(m.l[n])m.close(n);if(b&&b.id)a=b.id;if(a)for (x in m.l)if(m.l[x]&&m.l[x].a==a)m.close(m.l[x].n);i.n=n;i.l=l;i.o=0;i.x=0;i.p=m.cn(m.playerName?m.playerName:p);i.a=a;i.t=0;i.ts=0;i.s=Math.floor(tm"
++".getTime()/1000);i.lx=0;i.lt=i.s;i.lo=0;i.e='';i.to=-1;i.tc=0;i.fel=new Object;i.vt=0;i.sn=0;i.sx=\"\";i.sl=0;i.sg=0;i.sc=0;i.us=0;i.co=0;i.cot=0;i.lm=0;i.lom=0;m.l[n]=i}};m._delete=function(n){var"
++" m=this,i;n=m.cn(n);i=m.l[n];m.l[n]=0;if(i&&i.m)clearTimeout(i.m.i)};m.close=function(n){this.e(n,0,-1)};m.play=function(n,o,sn,sx,sl){var m=this,i;i=m.e(n,1,o,sn,sx,sl);if(i&&!i.m){i.m=new Object;"
++"i.m.m=new Function('var m=s_c_il['+m._in+'],i;if(m.l){i=m.l[\"'+m.s.rep(i.n,'\"','\\\\\"')+'\"];if(i){if(i.lx==1)m.e(i.n,3,-1);i.m.i=setTimeout(i.m.m,1000)}}');i.m.m()}};m.complete=function(n,o){th"
++"is.e(n,5,o)};m.stop=function(n,o){this.e(n,2,o)};m.track=function(n){this.e(n,4,-1)};m.bcd=function(vo,i){var m=this,ns='a.media.',v=vo.linkTrackVars,e=vo.linkTrackEvents,pe='m_i',pev3,c=vo.context"
++"Data,x;c['a.contentType']='video';c[ns+'name']=i.n;c[ns+'playerName']=i.p;if(i.l>0){c[ns+'length']=i.l;}c[ns+'timePlayed']=Math.floor(i.ts);if(!i.vt){c[ns+'view']=true;pe='m_s';i.vt=1}if(i.sx){c[ns"
++"+'segmentNum']=i.sn;c[ns+'segment']=i.sx;if(i.sl>0)c[ns+'segmentLength']=i.sl;if(i.sc&&i.ts>0)c[ns+'segmentView']=true}if(!i.cot&&i.co){c[ns+\"complete\"]=true;i.cot=1}if(i.lm>0)c[ns+'milestone']=i"
++".lm;if(i.lom>0)c[ns+'offsetMilestone']=i.lom;if(v)for(x in c)v+=',contextData.'+x;pev3='video';vo.pe=pe;vo.pev3=pev3;var d=m.contextDataMapping,y,a,l,n;if(d){vo.events2='';if(v)v+=',events';for(x i"
++"n d){if(x.substring(0,ns.length)==ns)y=x.substring(ns.length);else y=\"\";a=d[x];if(typeof(a)=='string'){l=m.s.sp(a,',');for(n=0;n<l.length;n++){a=l[n];if(x==\"a.contentType\"){if(v)v+=','+a;vo[a]="
++"c[x]}else if(y){if(y=='view'||y=='segmentView'||y=='complete'||y=='timePlayed'){if(e)e+=','+a;if(c[x]){if(y=='timePlayed'){if(c[x])vo.events2+=(vo.events2?',':'')+a+'='+c[x];}else if(c[x])vo.events"
++"2+=(vo.events2?',':'')+a}}else if(y=='segment'&&c[x+'Num']){if(v)v+=','+a;vo[a]=c[x+'Num']+':'+c[x]}else{if(v)v+=','+a;vo[a]=c[x]}}}}else if(y=='milestones'||y=='offsetMilestones'){x=x.substring(0,"
++"x.length-1);if(c[x]&&d[x+'s'][c[x]]){if(e)e+=','+d[x+'s'][c[x]];vo.events2+=(vo.events2?',':'')+d[x+'s'][c[x]]}}}vo.contextData=0}vo.linkTrackVars=v;vo.linkTrackEvents=e};m.bpe=function(vo,i,x,o){v"
++"ar m=this,pe='m_o',pev3,d='--**--';pe='m_o';if(!i.vt){pe='m_s';i.vt=1}else if(x==4)pe='m_i';pev3=m.s.ape(i.n)+d+Math.floor(i.l>0?i.l:1)+d+m.s.ape(i.p)+d+Math.floor(i.t)+d+i.s+d+(i.to>=0?'L'+Math.fl"
++"oor(i.to):'')+i.e+(x!=0&&x!=2?'L'+Math.floor(o):'');vo.pe=pe;vo.pev3=pev3};m.e=function(n,x,o,sn,sx,sl,pd){var m=this,i,tm=new Date,ts=Math.floor(tm.getTime()/1000),c,l,v=m.trackVars,e=m.trackEvent"
++"s,ti=m.trackSeconds,tp=m.trackMilestones,to=m.trackOffsetMilestones,sm=m.segmentByMilestones,so=m.segmentByOffsetMilestones,z=new Array,j,t=1,w=new Object,x,ek,tc,vo=new Object;n=m.cn(n);i=n&&m.l&&"
++"m.l[n]?m.l[n]:0;if(i){if(o<0){if(i.lx==1&&i.lt>0)o=(ts-i.lt)+i.lo;else o=i.lo}if(i.l>0)o=o<i.l?o:i.l;if(o<0)o=0;i.o=o;if(i.l>0){i.x=(i.o/i.l)*100;i.x=i.x>100?100:i.x}if(i.lo<0)i.lo=o;tc=i.tc;w.name"
++"=n;w.length=i.l;w.openTime=new Date;w.openTime.setTime(i.s*1000);w.offset=i.o;w.percent=i.x;w.playerName=i.p;if(i.to<0)w.mediaEvent=w.event='OPEN';else w.mediaEvent=w.event=(x==1?'PLAY':(x==2?'STOP"
++"':(x==3?'MONITOR':(x==4?'TRACK':(x==5?'COMPLETE':('CLOSE'))))));if(!pd){if(i.pd)pd=i.pd}else i.pd=pd;w.player=pd;if(x>2||(x!=i.lx&&(x!=2||i.lx==1))) {if(!sx){sn=i.sn;sx=i.sx;sl=i.sl}if(x){if(x==1)i"
++".lo=o;if((x<=3||x==5)&&i.to>=0){t=0;v=e=\"None\";if(i.to!=o){l=i.to;if(l>o){l=i.lo;if(l>o)l=o}z=tp?m.s.sp(tp,','):0;if(i.l>0&&z&&o>=l)for(j=0;j<z.length;j++){c=z[j]?parseFloat(''+z[j]):0;if(c&&(l/i"
++".l)*100<c&&i.x>=c){t=1;j=z.length;w.mediaEvent=w.event='MILESTONE';i.lm=w.milestone=c}}z=to?m.s.sp(to,','):0;if(z&&o>=l)for(j=0;j<z.length;j++){c=z[j]?parseFloat(''+z[j]):0;if(c&&l<c&&o>=c){t=1;j=z"
++".length;w.mediaEvent=w.event='OFFSET_MILESTONE';i.lom=w.offsetMilestone=c}}}}if(i.sg||!sx){if(sm&&tp&&i.l>0){z=m.s.sp(tp,',');if(z){z[z.length]='100';l=0;for(j=0;j<z.length;j++){c=z[j]?parseFloat('"
++"'+z[j]):0;if(c){if(i.x<c){sn=j+1;sx='M:'+l+'-'+c;j=z.length}l=c}}}}else if(so&&to){z=m.s.sp(to,',');if(z){z[z.length]=''+(i.l>0?i.l:'E');l=0;for(j=0;j<z.length;j++){c=z[j]?parseFloat(''+z[j]):0;if("
++"c||z[j]=='E'){if(o<c||z[j]=='E'){sn=j+1;sx='O:'+l+'-'+c;j=z.length}l=c}}}}if(sx)i.sg=1}if((sx||i.sx)&&sx!=i.sx){i.us=1;if(!i.sx){i.sn=sn;i.sx=sx}if(i.to>=0)t=1}if(x>=2&&i.lo<o){i.t+=o-i.lo;i.ts+=o-"
++"i.lo}if(x<=2||(x==3&&!i.lx)){i.e+=(x==1||x==3?'S':'E')+Math.floor(o);i.lx=(x==3?1:x)}if(!t&&i.to>=0&&x<=3){ti=ti?ti:0;if(ti&&i.ts>=ti){t=1;w.mediaEvent=w.event='SECONDS'}}i.lt=ts;i.lo=o}if(!x||i.x>"
++"=100){x=0;m.e(n,2,-1,0,0,-1,pd);v=e=\"None\";w.mediaEvent=w.event=\"CLOSE\"}if(x==5||(m.completeByCloseOffset&&(!x||i.x>=100)&&i.l>0&&o>=i.l-m.completeCloseOffsetThreshold)){w.complete=i.co=1;t=1}e"
++"k=w.mediaEvent;if(ek=='MILESTONE')ek+='_'+w.milestone;else if(ek=='OFFSET_MILESTONE')ek+='_'+w.offsetMilestone;if(!i.fel[ek]) {w.eventFirstTime=true;i.fel[ek]=1}else w.eventFirstTime=false;w.timePl"
++"ayed=i.t;w.segmentNum=i.sn;w.segment=i.sx;w.segmentLength=i.sl;if(m.monitor&&x!=4)m.monitor(m.s,w);if(x==0)m._delete(n);if(t&&i.tc==tc){vo=new Object;vo.contextData=new Object;vo.linkTrackVars=v;vo"
++".linkTrackEvents=e;if(!vo.linkTrackVars)vo.linkTrackVars='';if(!vo.linkTrackEvents)vo.linkTrackEvents='';if(m.trackUsingContextData)m.bcd(vo,i);else m.bpe(vo,i,x,o);m.s.t(vo);if(i.us){i.sn=sn;i.sx="
++"sx;i.sc=1;i.us=0}else if(i.ts>0)i.sc=0;i.e=\"\";i.lm=i.lom=0;i.ts-=Math.floor(i.ts);i.to=o;i.tc++}}}return i};m.ae=function(n,l,p,x,o,sn,sx,sl,pd,b){var m=this,r=0;if(n&&(!m.autoTrackMediaLengthReq"
++"uired||(length&&length>0)) &&p){if(!m.l||!m.l[n]){if(x==1||x==3){m.open(n,l,p,b);r=1}}else r=1;if(r)m.e(n,x,o,sn,sx,sl,pd)}};m.a=function(o,t){var m=this,i=o.id?o.id:o.name,n=o.name,p=0,v,c,c1,c2,x"
++"c=m.s.h,x,e,f1,f2='s_media_'+m._in+'_oc',f3='s_media_'+m._in+'_t',f4='s_media_'+m._in+'_s',f5='s_media_'+m._in+'_l',f6='s_media_'+m._in+'_m',f7='s_media_'+m._in+'_c',tcf,w;if(!i){if(!m.c)m.c=0;i='s"
++"_media_'+m._in+'_'+m.c;m.c++}if(!o.id)o.id=i;if(!o.name)o.name=n=i;if(!m.ol)m.ol=new Object;if(m.ol[i])return;m.ol[i]=o;if(!xc)xc=m.s.b;tcf=new Function('o','var e,p=0;try{if(o.versionInfo&&o.curre"
++"ntMedia&&o.controls)p=1}catch(e){p=0}return p');p=tcf(o);if(!p){tcf=new Function('o','var e,p=0,t;try{t=o.GetQuickTimeVersion();if(t)p=2}catch(e){p=0}return p');p=tcf(o);if(!p){tcf=new Function('o'"
++",'var e,p=0,t;try{t=o.GetVersionInfo();if(t)p=3}catch(e){p=0}return p');p=tcf(o)}}v=\"var m=s_c_il[\"+m._in+\"],o=m.ol['\"+i+\"']\";if(p==1){p='Windows Media Player '+o.versionInfo;c1=v+',n,p,l,x=-"
++"1,cm,c,mn;if(o){cm=o.currentMedia;c=o.controls;if(cm&&c){mn=cm.name?cm.name:c.URL;l=cm.duration;p=c.currentPosition;n=o.playState;if(n){if(n==8)x=0;if(n==3)x=1;if(n==1||n==2||n==4||n==5||n==6)x=2;}"
++"';c2='if(x>=0)m.ae(mn,l,\"'+p+'\",x,x!=2?p:-1,0,\"\",0,0,o)}}';c=c1+c2;if(m.s.isie&&xc){x=m.s.d.createElement('script');x.language='jscript';x.type='text/javascript';x.htmlFor=i;x.event='PlayStateC"
++"hange(NewState)';x.defer=true;x.text=c;xc.appendChild(x);o[f6]=new Function(c1+'if(n==3){x=3;'+c2+'}setTimeout(o.'+f6+',5000)');o[f6]()}}if(p==2){p='QuickTime Player '+(o.GetIsQuickTimeRegistered()"
++"?'Pro ':'')+o.GetQuickTimeVersion();f1=f2;c=v+',n,x,t,l,p,p2,mn;if(o){mn=o.GetMovieName()?o.GetMovieName():o.GetURL();n=o.GetRate();t=o.GetTimeScale();l=o.GetDuration()/t;p=o.GetTime()/t;p2=o.'+f5+"
++"';if(n!=o.'+f4+'||p<p2||p-p2>5){x=2;if(n!=0)x=1;else if(p>=l)x=0;if(p<p2||p-p2>5)m.ae(mn,l,\"'+p+'\",2,p2,0,\"\",0,0,o);m.ae(mn,l,\"'+p+'\",x,x!=2?p:-1,0,\"\",0,0,o)}if(n>0&&o.'+f7+'>=10){m.ae(mn,l"
++",\"'+p+'\",3,p,0,\"\",0,0,o);o.'+f7+'=0}o.'+f7+'++;o.'+f4+'=n;o.'+f5+'=p;setTimeout(\"'+v+';o.'+f2+'(0,0)\",500)}';o[f1]=new Function('a','b',c);o[f4]=-1;o[f7]=0;o[f1](0,0)}if(p==3){p='RealPlayer '"
++"+o.GetVersionInfo();f1=n+'_OnPlayStateChange';c1=v+',n,x=-1,l,p,mn;if(o){mn=o.GetTitle()?o.GetTitle():o.GetSource();n=o.GetPlayState();l=o.GetLength()/1000;p=o.GetPosition()/1000;if(n!=o.'+f4+'){if"
++"(n==3)x=1;if(n==0||n==2||n==4||n==5)x=2;if(n==0&&(p>=l||p==0))x=0;if(x>=0)m.ae(mn,l,\"'+p+'\",x,x!=2?p:-1,0,\"\",0,0,o)}if(n==3&&(o.'+f7+'>=10||!o.'+f3+')){m.ae(mn,l,\"'+p+'\",3,p,0,\"\",0,0,o);o.'"
++"+f7+'=0}o.'+f7+'++;o.'+f4+'=n;';c2='if(o.'+f2+')o.'+f2+'(o,n)}';if(m.s.wd[f1])o[f2]=m.s.wd[f1];m.s.wd[f1]=new Function('a','b',c1+c2);o[f1]=new Function('a','b',c1+'setTimeout(\"'+v+';o.'+f1+'(0,0)"
++"\",o.'+f3+'?500:5000);'+c2);o[f4]=-1;if(m.s.isie)o[f3]=1;o[f7]=0;o[f1](0,0)}};m.as=new Function('e','var m=s_c_il['+m._in+'],l,n;if(m.autoTrack&&m.s.d.getElementsByTagName){l=m.s.d.getElementsByTag"
++"Name(m.s.isie?\"OBJECT\":\"EMBED\");if(l)for(n=0;n<l.length;n++)m.a(l[n]);}');if(s.wd.attachEvent)s.wd.attachEvent('onload',m.as);else if(s.wd.addEventListener)s.wd.addEventListener('load',m.as,fal"
++"se);if(m.onLoad)m.onLoad(s,m)";
+s.m_i("Media");
+
+/* Configure Modules and Plugins */
+s.usePlugins=true;
+function s_doPlugins(s) {
+	/* Add calls to plugins here */
+
+	/* Uses GMT -8 time zone to set the current hour,day,week wariables for tracking purposes */
+	s.eVar24 = s.getTimeParting('h','-8'); // Set hour
+	s.eVar25 = s.getTimeParting('d','-8'); // Set day
+	s.eVar26 = s.getTimeParting('w','-8'); // Set weekday
+	s.prop28 = s.getTimeParting('h','-8'); // Set hour
+	s.prop29 = s.getTimeParting('d','-8'); // Set day
+	s.prop30 = s.getTimeParting('w','-8'); // Set weekday
+	if (s.linkTrackVars === "None") {
+		s.linkTrackVars = null;
+	}
+	s.linkTrackVars = s.apl(s.linkTrackVars, "eVar24,eVar25,eVar26,prop28,prop29,prop30", ",", 1);
+	if (typeof s != "undefined" && typeof s.trackTNT != "undefined") s.tnt=s.trackTNT();
+}
+s.doPlugins=s_doPlugins;
+
+s.loadModule("Media");
+s.Media.autoTrack = false;
+s.Media.trackWhilePlaying = true;
+s.Media.trackVars = "prop11,prop12,prop44,eVar5,eVar19,eVar20,eVar36";
+s.Media.trackEvents = "event31,event32,event34,event35,event33";
+
+//Video tracking config
+s.Media.trackUsingContextData = true;
+s.Media.trackMilestones = "70,100";
+s.Media.contextDataMapping = {
+	"a.media.name":"eVar36,prop44",
+	"a.media.segment":"eVar19",
+	"a.contentType":"eVar20",
+	"a.media.timePlayed":"event31",
+	"a.media.view":"event32",
+	"a.media.segmentView":"event34",
+	"a.media.milestones":{
+		70:"event35",
+		100:"event33"
+	}
+};</script> 
+<!-- isAem55: false --> 
+<script>
+    
+
+
+
+
+
+
+
+	
+	
+		
+			
+
+	
+Analytics.setClientContextVariableMap({ map: {eventdata: {linkListRefinementType: ["eVar14"]}}, resourceType: "nextgen/components/search/linklist"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {rpPlanType: ["eVar32"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level2: ["channel"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {pageName: ["pageName"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {searchEngineKeyword: ["eVar8"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {accountActivityType: ["eVar7"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {registration: ["eVar4"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {aeid: ["eVar5"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {guid: ["eVar2"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {loginMethod: ["eVar3"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {shareClass: ["eVar41"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {fundSelected: ["eVar44"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {applicationSetting: ["eVar42"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {litCenterSearch: ["event27"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {scRemove: ["scRemove"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {scAdd: ["scAdd"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {campaign: ["campaign"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {visionid: ["prop45"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {litSearchTerm: ["prop48"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {internalPromotion: ["eVar16"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {server: ["server"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {setImpressions: ["event51"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {newOrRepeat: ["eVar13"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {selfServiceName: ["eVar57"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {setClicks: ["event52"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {setName: ["eVar56"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {applicationName: ["eVar10"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {imageClick: ["event13"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {selfServiceStart: ["event53"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {scView: ["scView"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {selfServiceComplete: ["event54"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {loginLockouts: ["event11"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {processStep: ["event55"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {promoImpressions: ["event12"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {products: ["products"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {loginSuccess: ["event1"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {pageName: ["prop17"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {conversionPathing: ["prop19"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {planSponsorName: ["eVar62"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {loginStart: ["event9"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {planAssets: ["eVar63"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {loginFailure: ["event8"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {accountActivity: ["event7"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {aeid: ["prop11"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {litDownloads: ["event5"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {newOrRepeat: ["prop13"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {scCheckout: ["scCheckout"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {applicationDownload: ["event4"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {guid: ["prop12"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {applicationFinish: ["event3"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {pageURL: ["prop59"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {applicationStart: ["event2"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {processStepNumber: ["eVar68"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {pageName: ["eVar22"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {processName: ["eVar67"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {numOfPlanParticipants: ["eVar64"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {litSearchTerm: ["eVar21"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {webAssistant: ["eVar65"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {scPurchase: ["purchase"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {hierarchy: ["hier1"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level9: ["prop8"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level8: ["prop7"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {scOpen: ["scOpen"]}}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level7: ["prop6"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level6: ["prop5"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {kenshooId: ["eVar28"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level5: ["prop4"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level4: ["prop3"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {level3: ["prop2"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {pageLoadTime: ["prop27"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {navigationLocation: ["prop21"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {webAssistant: ["prop65"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {linkTrack: ["prop24"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {pagedata: {errorCodes: ["prop23"]}}, resourceType: "nextgen/components/pages/base"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {spKeyword: ["eVar15"]}}, resourceType: "nextgen/components/search/search"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {spResults: ["prop16"]}}, resourceType: "nextgen/components/search/search"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {events: {spSearch: ["event6"]}}}, resourceType: "nextgen/components/search/search"});
+Analytics.setClientContextVariableMap({ map: {eventdata: {spKeyword: ["prop15"]}}, resourceType: "nextgen/components/search/search"});
+	
+
+
+
+
+	CQ_Analytics.PageDataMgr.addInitProperty("pageURL", "D=g");
+	CQ_Analytics.PageDataMgr.addInitProperty("pageName","advisor &gt; Contact Us");
+	CQ_Analytics.PageDataMgr.addInitProperty("server","advisor");
+
+	CQ_Analytics.PageDataMgr.addInitProperty("level2","American Funds - Advisors");
+
+	CQ_Analytics.PageDataMgr.addInitProperty("level3","Contact Us");
+
+	CQ_Analytics.PageDataMgr.addInitProperty("level4","Section Index");
+
+	CQ_Analytics.PageDataMgr.addInitProperty("parentChild","advisor &gt; Contact Us");
+	CQ_Analytics.PageDataMgr.addInitProperty("siteType","Standard");
+
+	CQ_Analytics.PageDataMgr.addInitProperty("hierarchy", "advisor,Contact Us,Section Index");
+
+
+	var props = $.each(Analytics.getClientSideDefaults(true), function(key, data) {
+		if (key === "pagedata") {
+			$.each(data, function(clientContextKey, value) {
+				CQ_Analytics.PageDataMgr.addInitProperty(clientContextKey, value);
+			});
+		} else if (key === "eventdata") {
+			
+			Analytics.SSI.addProperty("events", data.events);
+		}
+	});
+	
+	
+	
+	var campaign = Analytics.getExternalCampaignName();
+	if (campaign === null) {
+		campaign = "";
+	}
+	if (campaign !== "") {
+		CQ_Analytics.PageDataMgr.addInitProperty("campaign", campaign);
+	}
+	Analytics.populateInternalCampaignData();
+	var navLocation = Analytics.Navigation.getNavigation();
+	if (navLocation) {
+		CQ_Analytics.PageDataMgr.addInitProperty("navigationLocation", navLocation);
+	}
+
+	
+	var semUrl = new Url(window.location.href);
+	var searchEngineKeyword = semUrl.getParameter('semkw');
+	if (searchEngineKeyword !== null && searchEngineKeyword !== "") {
+		CQ_Analytics.PageDataMgr.addInitProperty("searchEngineKeyword", searchEngineKeyword);
+	}
+
+
+	
+	var pageLoadTime = Analytics.getLoadTime();
+	if (pageLoadTime !== null && pageLoadTime !== "") {
+		CQ_Analytics.PageDataMgr.addInitProperty("pageLoadTime", pageLoadTime);
+	}
+	
+	
+
+	Analytics.sendApplicationUsage(CQ_Analytics);		
+
+	Analytics.SSI.recordProperties(CQ_Analytics);
+
+</script> 
+<div class="servicecomponents cloudservices"> 
+ <div class="cloudservice sitecatalyst"> 
+  <script>
+CQ_Analytics.Sitecatalyst.frameworkComponents = ['nextgen/components/search/linklist','nextgen/components/pages/base','nextgen/components/search/search'];
+/**
+ * Sets SiteCatalyst variables accordingly to mapped components. If <code>options</code>
+ * object is provided only variables matching the options.componentPath are set.
+ *
+ * @param {Object} options Parameter object from CQ_Analytics.record() call. Optional.
+ */
+CQ_Analytics.Sitecatalyst.updateEvars = function(options) {
+    this.frameworkMappings = [];
+    this.frameworkMappings.push({scVar:"evar14",cqVar:"eventdata.linkListRefinementType",resourceType:"nextgen/components/search/linklist"});
+    this.frameworkMappings.push({scVar:"evar32",cqVar:"pagedata.rpPlanType",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"channel",cqVar:"pagedata.level2",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"pageName",cqVar:"pagedata.pageName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar8",cqVar:"pagedata.searchEngineKeyword",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar7",cqVar:"pagedata.accountActivityType",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar4",cqVar:"pagedata.registration",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar5",cqVar:"pagedata.aeid",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar2",cqVar:"pagedata.guid",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar3",cqVar:"pagedata.loginMethod",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar41",cqVar:"pagedata.shareClass",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar44",cqVar:"pagedata.fundSelected",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar42",cqVar:"pagedata.applicationSetting",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event27",cqVar:"eventdata.events.litCenterSearch",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"scRemove",cqVar:"eventdata.events.scRemove",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"scAdd",cqVar:"eventdata.events.scAdd",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"campaign",cqVar:"pagedata.campaign",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop45",cqVar:"pagedata.visionid",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop48",cqVar:"pagedata.litSearchTerm",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar16",cqVar:"pagedata.internalPromotion",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"server",cqVar:"pagedata.server",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event51",cqVar:"eventdata.events.setImpressions",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar13",cqVar:"pagedata.newOrRepeat",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar57",cqVar:"pagedata.selfServiceName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event52",cqVar:"eventdata.events.setClicks",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar56",cqVar:"pagedata.setName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar10",cqVar:"pagedata.applicationName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event13",cqVar:"eventdata.events.imageClick",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event53",cqVar:"eventdata.events.selfServiceStart",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"scView",cqVar:"eventdata.events.scView",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event54",cqVar:"eventdata.events.selfServiceComplete",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event11",cqVar:"eventdata.events.loginLockouts",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event55",cqVar:"eventdata.events.processStep",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event12",cqVar:"eventdata.events.promoImpressions",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"products",cqVar:"pagedata.products",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event1",cqVar:"eventdata.events.loginSuccess",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop17",cqVar:"pagedata.pageName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop19",cqVar:"pagedata.conversionPathing",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar62",cqVar:"pagedata.planSponsorName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event9",cqVar:"eventdata.events.loginStart",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar63",cqVar:"pagedata.planAssets",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event8",cqVar:"eventdata.events.loginFailure",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event7",cqVar:"eventdata.events.accountActivity",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop11",cqVar:"pagedata.aeid",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event5",cqVar:"eventdata.events.litDownloads",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop13",cqVar:"pagedata.newOrRepeat",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"scCheckout",cqVar:"eventdata.events.scCheckout",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event4",cqVar:"eventdata.events.applicationDownload",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop12",cqVar:"pagedata.guid",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event3",cqVar:"eventdata.events.applicationFinish",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop59",cqVar:"pagedata.pageURL",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"event2",cqVar:"eventdata.events.applicationStart",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar68",cqVar:"pagedata.processStepNumber",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar22",cqVar:"pagedata.pageName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar67",cqVar:"pagedata.processName",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar64",cqVar:"pagedata.numOfPlanParticipants",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar21",cqVar:"pagedata.litSearchTerm",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar65",cqVar:"pagedata.webAssistant",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"purchase",cqVar:"eventdata.events.scPurchase",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"hier1",cqVar:"pagedata.hierarchy",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop8",cqVar:"pagedata.level9",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop7",cqVar:"pagedata.level8",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"scOpen",cqVar:"eventdata.events.scOpen",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop6",cqVar:"pagedata.level7",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop5",cqVar:"pagedata.level6",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar28",cqVar:"pagedata.kenshooId",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop4",cqVar:"pagedata.level5",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop3",cqVar:"pagedata.level4",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop2",cqVar:"pagedata.level3",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop27",cqVar:"pagedata.pageLoadTime",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop21",cqVar:"pagedata.navigationLocation",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop65",cqVar:"pagedata.webAssistant",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop24",cqVar:"pagedata.linkTrack",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"prop23",cqVar:"pagedata.errorCodes",resourceType:"nextgen/components/pages/base"});
+    this.frameworkMappings.push({scVar:"evar15",cqVar:"eventdata.spKeyword",resourceType:"nextgen/components/search/search"});
+    this.frameworkMappings.push({scVar:"prop16",cqVar:"eventdata.spResults",resourceType:"nextgen/components/search/search"});
+    this.frameworkMappings.push({scVar:"event6",cqVar:"eventdata.events.spSearch",resourceType:"nextgen/components/search/search"});
+    this.frameworkMappings.push({scVar:"prop15",cqVar:"eventdata.spKeyword",resourceType:"nextgen/components/search/search"});
+    for (var i=0; i<this.frameworkMappings.length; i++){
+        var m = this.frameworkMappings[i];
+        if (!options || options.compatibility || (options.componentPath == m.resourceType)) {
+            CQ_Analytics.Sitecatalyst.setEvar(m);
+        }
+    }
+}
+
+CQ_Analytics.Sitecatalyst.doPageTrack = function() {
+    var collect = true;
+    var lte = s.linkTrackEvents;
+    s.pageName="content:sites:american-funds:advisor:us:en:home:contact-us";
+    CQ_Analytics.Sitecatalyst.collect(collect);
+    if (collect) {
+        CQ_Analytics.Sitecatalyst.updateEvars();
+        /****************** Test&Target Mobx.js sitecatalyst:event Start ********************/
+        /**** Test & Target code before s.t(); call  *****/
+        if (typeof mboxLoadSCPlugin != "undefined") mboxLoadSCPlugin(s);
+        /****************** Test&Target Mobx.js sitecatalyst:event End ********************/
+        /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    
+    	var s_code=s.t();if(s_code)document.write(s_code);
+    
+        s.linkTrackEvents = lte;
+        if(s.linkTrackVars.indexOf('events')==-1){delete s.events};
+        $CQ(document).trigger("sitecatalystAfterCollect");
+    }
+};
+
+CQ_Analytics.CCM.addListener("storesinitialize", function(e) {
+	CQ_Analytics.Sitecatalyst.doPageTrack();
+});
+
+
+</script> 
+  <noscript> 
+   <img src="https://analytics.americanfunds.com/b/ss/capgroupint,capgroupglob/1/H.26.2--NS/1494364008714?cdp=2&amp;gn=content%3Asites%3Aamerican-funds%3Aadvisor%3Aus%3Aen%3Ahome%3Acontact-us" height="1" width="1" border="0" alt=""> 
+  </noscript> 
+  <span data-tracking="{event:'pageView', values:{}, componentPath:'foundation/components/page'}"></span> 
+ </div> 
+ <div class="testandtarget cloudservice"> 
+  
+ </div> 
+</div>
+
 </body>
+</html>

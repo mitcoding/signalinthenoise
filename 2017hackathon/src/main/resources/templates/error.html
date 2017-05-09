@@ -3,6 +3,13 @@
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'error')}">
 
   <body>
+  	<div class="titleBar parbase title-bar">
+		<div class="ns-title-bar standard">
+			<div class="h1"> 
+	        	<p class="title-text ">We‘re sorry...</p> 
+	       </div>
+		</div>
+	</div>
     <p th:text="${message}">Exception message</p>
   </body>
 
