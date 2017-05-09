@@ -29,6 +29,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.sql.DataSource;
@@ -92,9 +93,9 @@ public class Main {
 
  @RequestMapping(value="/sms", produces = "application/xml;charset=UTF-8")
  @ResponseBody
- String respondToSms(){
+ String respondToSms( @RequestParam("body") String smsInboundBody){
      Message message = new Message.Builder()
-             .body(new Body("Hello, Mobile VIMM"))
+             .body(new Body("You chose: " + smsInboundBody))
              .build();
 
      MessagingResponse twiml = new MessagingResponse.Builder()
