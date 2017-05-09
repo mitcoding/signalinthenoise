@@ -29,6 +29,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -89,27 +90,27 @@ public class Main {
     }
   }
 
- @RequestMapping("/sms")
+ @RequestMapping(value="/sms", produces = "application/xml;charset=UTF-8")
+ @ResponseBody
  String respondToSms(){
      Message message = new Message.Builder()
-             .body(new Body("Hello, Mobile Monkey"))
+             .body(new Body("Hello, Mobile VIMM"))
              .build();
 
      MessagingResponse twiml = new MessagingResponse.Builder()
              .message(message)
              .build();
 
-     response.setContentType("application/xml");
+     //response.setContentType("application/xml");
 
      try {
-         response.getWriter().print(twiml.toXml());
+         //response.getWriter().print(twiml.toXml());
+    	 return(twiml.toXml());
      } catch (TwiMLException e) {
          e.printStackTrace();
      }
+     return "";
  }
 	 
  }
   
-  
-  
-}
