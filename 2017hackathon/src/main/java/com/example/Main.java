@@ -16,6 +16,10 @@
 
 package com.example;
 
+import com.twilio.twiml.Body;
+import com.twilio.twiml.Message;
+import com.twilio.twiml.MessagingResponse;
+import com.twilio.twiml.TwiMLException;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -85,4 +89,27 @@ public class Main {
     }
   }
 
+ @RequestMapping("/sms")
+ String respondToSms(){
+     Message message = new Message.Builder()
+             .body(new Body("Hello, Mobile Monkey"))
+             .build();
+
+     MessagingResponse twiml = new MessagingResponse.Builder()
+             .message(message)
+             .build();
+
+     response.setContentType("application/xml");
+
+     try {
+         response.getWriter().print(twiml.toXml());
+     } catch (TwiMLException e) {
+         e.printStackTrace();
+     }
+ }
+	 
+ }
+  
+  
+  
 }
