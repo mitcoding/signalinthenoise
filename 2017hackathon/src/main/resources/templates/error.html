@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'error', 'We‘re sorry... | American Funds')}">
-
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body}, 'error', ~{::title})}">
+  <head>
+  	<title>We‘re sorry... | American Funds</title>
+  </head>
+	
   <body>
   	<div class="titleBar parbase title-bar">
 		<div class="ns-title-bar standard">

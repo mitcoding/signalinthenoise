@@ -1,6 +1,13 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index', 'Contact Us | American Funds')}">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'index', ~{::title})}">
+<head>
+	<title>Contact Us | American Funds</title>
+	
+</head>
 <body>
+	<link href="/textMeApp/styles/main.css" rel="stylesheet">
+	<script src="/textMeApp/textMeApp.js"></script>
+	<script src="/textMeApp/main/main-ctrl.js"></script>
 	<div class="titleBar parbase title-bar">
 		<div class="ns-title-bar standard">
 			<div class="h1"> 
@@ -195,6 +202,27 @@
 
 
 						</div>
+					</div>
+					<div ng-app="textMeApp">
+						<div class="ns-login">
+							<div class="login-table-container">
+								<div class="login-table-row">
+									<div class="login-button-cell">
+					    				<a ui-sref="hello" ui-sref-active="active" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>Hello</a>
+					    			</div>
+					    		</div>
+					    	</div>
+					    </div>
+					    <div class="ns-login">
+							<div class="login-table-container">
+								<div class="login-table-row">
+									<div class="login-button-cell">
+						    			<a ui-sref="about" ui-sref-active="active" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>About</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					    <div ui-view></div>
 					</div>
 					<script class="contacts-template" type="text/x-handlebars-template">
 <div class="mbp-row">
