@@ -1,6 +1,6 @@
-var myApp = angular.module('textMeApp', ['ui.router', 'ngResource']);
+var textMeApp = angular.module('textMeApp', ['ui.router', 'ngResource']);
 
-myApp.config(function($stateProvider, $urlRouterProvider) {
+textMeApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state({
 	    name: 'home',
 	    url: '/',
@@ -15,7 +15,10 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state({
 	    name: 'sms.request',
 	    url: '/request',
-	    templateUrl: 'textMeApp/views/sms/request.html'
+	    templateUrl: 'textMeApp/views/sms/request.html',
+	    controller: ["$scope", "$stateParams", function($scope, $stateParams){
+	    	
+	    }]
 	});
   
 	$stateProvider.state({
@@ -27,7 +30,13 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	$stateProvider.state({
 	    name: 'sms.error',
 	    url: '/error',
-	    templateUrl: 'textMeApp/views/sms/error.html'
+	    templateUrl: 'textMeApp/views/sms/error.html',
+	    params: {
+	    	error: null
+	    },
+	    controller: ["$scope", "$stateParams", function($scope, $stateParams) {
+	    	console.log($stateParams.error);
+	    }]
 	});
 	
 	$stateProvider.state({
@@ -52,9 +61,30 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	    name: 'validation.phone-number.index',
 	    url: '/index',
 	    templateUrl: 'textMeApp/views/validation/phone-number/index.html',
-	    controller: ["$state", "$scope", function($state, $scope) {
+	    resolve: {
+	    	phoneValidation: "phoneValidation",
+	    	validationResult: function(phoneValidation) {
+	    		return phoneValidation.get().$promise.then(
+	    			function(data) {
+	    				return data;
+	    			},
+	    			function(error) {
+	    				return error;
+	    			}
+	    		);
+	    	}
+	    },
+	    controller: ["$state", "$scope", "validationResult", function($state, $scope, validationResult) {
+	    	var hasError = (validationResult.data.error) ? true : false;
+	    	
 	    	$scope.currentStateName = $scope.currentStateName = $state.current.name + " (index): "+ ($state.current.name === "validation.phone-number");
-	    	$scope.hasError = false;
+	    	$scope.hasError = hasError;
+	    	
+	    	if (hasError) {
+	    		$state.go("validation.phone-number.error");
+	    	} else {
+	    		$state.go("validation.phone-number.success");
+	    	}
 	    }]
 	});
 	
@@ -62,9 +92,31 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	    name: 'validation.phone-number.success',
 	    url: '/success',
 	    templateUrl: 'textMeApp/views/validation/phone-number/success.html',
-	    controller: ["$state", "$scope", function($state, $scope) {
+	    resolve: {
+	    	sendSms: "sendSms",
+	    	smsResult: function(sendSms) {
+	    		return sendSms.get().$promise.then(
+	    			function(data) {
+	    				console.log(["smsResult.success: ", data]);
+	    				return data;
+	    			},
+	    			function(error) {
+	    				console.log(["smsResult.error: ", error]);
+	    				return error;
+	    			}
+	    		);
+	    	}
+	    },
+	    controller: ["$state", "$scope", "smsResult", function($state, $scope, smsResult) {
+	    	var hasError = (smsResult.data.error) ? true : false;
+	    	
 	    	$scope.currentStateName = $scope.currentStateName = $state.current.name + " (success): "+ ($state.current.name === "validation.phone-number");
 	    	$scope.hasError = false;
+	    	if (hasError) {
+	    		$state.go("sms.error", { error: smsResult });
+			} else {
+				$state.go("sms.success");
+			}
 	    }]
 	});
 	
@@ -83,7 +135,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 	$urlRouterProvider.otherwise("/");
 });
 
-myApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
+textMeApp.run(['$rootScope', '$state', '$stateParams', function ($rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
 }]);
