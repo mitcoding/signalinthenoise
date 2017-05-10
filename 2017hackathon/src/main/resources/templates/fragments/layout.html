@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if gt IE 9]><!--> <html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us" th:fragment="layout (template, menu)"> <!--<![endif]-->
+<!--[if gt IE 9]><!--> <html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us" th:fragment="layout (template, menu, pageTitle)"> <!--<![endif]-->
 <!--[if IE 8]> <html class="ie8" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us"> <![endif]-->
 <!--[if IE 9]> <html class="ie9" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns#" data-page-path="https://www.americanfunds.com/content/sites/american-funds/advisor/us/en/home/contact-us"> <![endif]-->
 <head>   
@@ -115,7 +115,7 @@
     }</script>
 
         
-        <title>Contact Us | American Funds</title>
+        <title th:replace="${pageTitle}">| American Funds</title>
         
 
         
