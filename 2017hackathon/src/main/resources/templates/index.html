@@ -5,9 +5,9 @@
 	
 </head>
 <body>
-	<link href="/textMeApp/styles/main.css" rel="stylesheet">
 	<script src="/textMeApp/textMeApp.js"></script>
-	<script src="/textMeApp/main/main-ctrl.js"></script>
+	<script src="/textMeApp/resources/phoneValidation.js"></script>
+	<script src="/textMeApp/resources/requestSms.js"></script>
 	<div class="titleBar parbase title-bar">
 		<div class="ns-title-bar standard">
 			<div class="h1"> 
@@ -90,7 +90,7 @@
 						<div class="row-fluid">
 							<div class="span3">
 								<div class="anchor-link" style="height: 50px;">
-									<a href="#phone" class="sticky-scroll"><span>Call/Fax</span></a>
+									<a href="#phone" class="sticky-scroll"><span>Call/Fax/SMS</span></a>
 								</div>
 							</div>
 							<div class="span3">
@@ -118,7 +118,7 @@
 									class="count_[com.capgroup.wcm.cgc.content.StickyAnchorLink@3c384001, com.capgroup.wcm.cgc.content.StickyAnchorLink@52797d5, com.capgroup.wcm.cgc.content.StickyAnchorLink@2afe6e85, com.capgroup.wcm.cgc.content.StickyAnchorLink@364cf829]">
 									<li>
 										<div class="anchor-link" style="height: 0px;">
-											<a href="#phone" class="sticky-scroll"><span>&nbsp;Call/Fax</span></a>
+											<a href="#phone" class="sticky-scroll"><span>&nbsp;Call/Fax/SMS</span></a>
 										</div>
 									</li>
 									<li>
@@ -163,7 +163,7 @@
 						data-jumplink-id="17abe4ba-e84a-4293-ad07-0cc5cf2ec39a"></div>
 					<div>
 						<h3>
-							Call/Fax<br>
+							Call/Fax/SMS<br>
 						</h3>
 						<h4>American Funds Contacts</h4>
 						<p>Advisor Marketing and Account Services representatives are
@@ -178,7 +178,7 @@
 						href="https://www.americanfunds.com/apps/nextgen/components/content/contacts/clientlibs.min.css"
 						type="text/css">
 					<script type="text/javascript"
-						src="/apps/nextgen/components/content/contacts/clientlibs.min.js"></script>
+						src="https://www.americanfunds.com/apps/nextgen/components/content/contacts/clientlibs.min.js"></script>
 					<h3></h3>
 					<div class="contacts-container row">
 						<div class="mbp-row">
@@ -204,24 +204,6 @@
 						</div>
 					</div>
 					<div ng-app="textMeApp">
-						<div class="ns-login">
-							<div class="login-table-container">
-								<div class="login-table-row">
-									<div class="login-button-cell">
-					    				<a ui-sref="hello" ui-sref-active="active" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>Hello</a>
-					    			</div>
-					    		</div>
-					    	</div>
-					    </div>
-					    <div class="ns-login">
-							<div class="login-table-container">
-								<div class="login-table-row">
-									<div class="login-button-cell">
-						    			<a ui-sref="about" ui-sref-active="active" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>About</a>
-									</div>
-								</div>
-							</div>
-						</div>
 					    <div ui-view></div>
 					</div>
 					<script class="contacts-template" type="text/x-handlebars-template">

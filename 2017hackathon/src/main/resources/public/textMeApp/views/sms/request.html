@@ -1,0 +1,56 @@
+<div class="row-fluid">
+	<div ng-class="{true: 'span5', false: 'span4' }[hasError == true]">
+		<div class="box white capital-blue-border-top default-margin-top">
+			<h1>Request SMS</h1>
+			<div ng-if="hasError" class="box box-error icon-large">
+				<p class="error"><strong>Please correct the following information:</strong></p>
+			</div>
+			<div class="row-fluid">
+				<div class="span12">
+					<div ng-class="{true: 'box black5', false: '' }[hasError == true]">
+						<div ng-class="{true: 'box box-error', false: '' }[hasError == true]">
+							<p ng-if="hasError" class="error"><strong>Check your phone number</strong></p>
+							<dl>
+								<dt><label for="userid">Phone Number</label></dt>
+								<dd><input type="tel" placeholder="Enter Phone Number" value="(310) 309 0654"/></dd>
+							</dl>
+						</div>
+
+						<div class="ns-login">
+							<div class="login-table-container">
+								<div class="login-table-row">
+									<div class="login-button-cell">
+									 	<a ui-sref="validation.phone-number" ui-sref-active="active" ui-sref-opts="{ reload: true }" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>Submit</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+
+<div class="ns-login">
+	<div class="login-table-container">
+		<div class="login-table-row">
+			<div class="login-button-cell">
+			 	<a ui-sref="sms.success" ui-sref-active="active" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>SMS Request Received</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ns-login">
+	<div class="login-table-container">
+		<div class="login-table-row">
+			<div class="login-button-cell">
+			 	<a ui-sref="sms.error" ui-sref-active="active" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>SMS Request Failed</a>
+			</div>
+		</div>
+	</div>
+</div>
