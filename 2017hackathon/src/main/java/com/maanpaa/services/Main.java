@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.example;
+package com.maanpaa.services;
 
 import com.twilio.twiml.Body;
 import com.twilio.twiml.Message;
@@ -63,13 +63,13 @@ public class Main {
   String db(Map<String, Object> model) {
     try (Connection connection = dataSource.getConnection()) {
       Statement stmt = connection.createStatement();
-      stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
-      stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
-      ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
+//      stmt.executeUpdate("CREATE TABLE IF NOT EXISTS ticks (tick timestamp)");
+//      stmt.executeUpdate("INSERT INTO ticks VALUES (now())");
+      ResultSet rs = stmt.executeQuery("SELECT tick, body FROM messagesReceived");
 
       ArrayList<String> output = new ArrayList<String>();
       while (rs.next()) {
-        output.add("Read from DB: " + rs.getTimestamp("tick"));
+        output.add("At: " + rs.getTimestamp("tick") + " Response: " + rs.getString("body"));
       }
 
       model.put("records", output);
@@ -94,9 +94,16 @@ public class Main {
  @RequestMapping(value="/sms", produces = "application/xml;charset=UTF-8")
  @ResponseBody
  String respondToSms( @RequestParam("Body") String smsInboundBody){
-     Message message = new Message.Builder()
-             .body(new Body("You chose: " + smsInboundBody))
-             .build();
+	 Message message;
+	 writeSMSintoDB(smsInboundBody);
+	 if(Integer.parseInt(smsInboundBody)==1) 
+	     message = new Message.Builder()
+	             .body(new Body("Option: " + smsInboundBody + " Capital Group representative will contact you shortly. Thank you."))
+	             .build();
+	 else
+		 message = new Message.Builder()
+				 .body(new Body("Option: " + smsInboundBody + " Please reply with name/s of literature you are requesting? Thank you."))
+	             .build();
 
      MessagingResponse twiml = new MessagingResponse.Builder()
              .message(message)
@@ -112,6 +119,28 @@ public class Main {
      }
      return "";
  }
-	 
+	 void writeSMSintoDB(String body){
+		    try (Connection connection = dataSource.getConnection()) {
+		        Statement stmt = connection.createStatement();
+		        stmt.executeUpdate("CREATE TABLE IF NOT EXISTS messagesReceived (tick timestamp, body text)");
+		        stmt.executeUpdate("INSERT INTO messagesReceived VALUES (now(), "+body+")");
+		        //ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
+
+//		        ArrayList<String> output = new ArrayList<String>();
+//		        while (rs.next()) {
+//		          output.add("Read from DB: " + rs.getTimestamp("tick"));
+//		        }
+//
+//		        model.put("records", output);
+//		        return "db";
+		      } catch (Exception e) {
+//		//        model.put("message", e.getMessage());
+//		        return "error";
+		      }		 
+		 
+		 
+		 
+		 
+	 }
  }
   
