@@ -95,6 +95,7 @@ public class Main {
  @ResponseBody
  String respondToSms( @RequestParam("Body") String smsInboundBody){
 	 Message message;
+	 writeSMSintoDB(smsInboundBody);
 	 if(Integer.parseInt(smsInboundBody)==1) 
 	     message = new Message.Builder()
 	             .body(new Body("Option: " + smsInboundBody + " Capital Group representative will contact you shortly. Thank you."))
