@@ -69,7 +69,7 @@ public class Main {
 
       ArrayList<String> output = new ArrayList<String>();
       while (rs.next()) {
-        output.add("Database Analytics: " + rs.getTimestamp("tick") + "Response Body: " + rs.getString("body"));
+        output.add("At: " + rs.getTimestamp("tick") + " Response: " + rs.getString("body"));
       }
 
       model.put("records", output);
