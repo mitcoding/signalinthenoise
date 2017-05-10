@@ -69,6 +69,11 @@
 	    <artifactId>angularjs</artifactId>
 	    <version>1.6.4</version>
 	</dependency>
+	<dependency>
+	    <groupId>org.webjars.bower</groupId>
+	    <artifactId>angular-resource</artifactId>
+	    <version>1.6.4</version>
+	</dependency>
     <dependency>
 	    <groupId>org.webjars</groupId>
 	    <artifactId>angular-ui-router</artifactId>
