@@ -129,9 +129,6 @@ public class SalesForceService {
          
     	 String welcomeURL = loginResponse.getInstanceUrl() + "/services/apexrest/HackathonTaskService/createTask";
 
-    	 //HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
-    	 
-    	 //JSONObject task = new JSONObject();
     	 ObjectMapper mapper = new ObjectMapper();
     	 String welcomeRequestAsString = mapper.writeValueAsString(welcomeRequest);
     	 
@@ -183,106 +180,7 @@ public class SalesForceService {
     	 
 		
 	}
-    	
-//    	
-//    	CloseableHttpClient httpclient = HttpClients.createDefault();
-//    	HttpHost proxy = new HttpHost("irvcache.capgroup.com",8080);
-//    	RequestConfig config = RequestConfig.custom()
-//                .setProxy(proxy)
-//                .build();
-//    	
-//        // Assemble the login request URL
-//        String loginURL = LOGINURL + 
-//                          GRANTSERVICE + 
-//                          "&client_id=" + CLIENTID + 
-//                          "&client_secret=" + CLIENTSECRET +
-//                          "&username=" + USERNAME +
-//                          "&password=" + PASSWORD;
-//        
-//        
-//        //loginURL =  URLEncoder.encode(loginURL);
-//        
-//        // Login requests must be POSTs
-//        HttpPost httpPost = new HttpPost(loginURL);
-//        httpPost.setConfig(config);
-//        HttpResponse response = null;
-//        
-//        System.out.println("loginURL: " + loginURL);
-//        
-//        try {
-//            // Execute the login POST request
-//            response = httpclient.execute(httpPost);
-//        } catch (ClientProtocolException cpException) {
-//            // Handle protocol exception
-//        	System.out.println("ClientProtocolException: "+cpException.getMessage());
-//        } catch (IOException ioException) {
-//            // Handle system IO exception
-//        	System.out.println("IOException: "+ioException.getMessage());
-//        }
-//
-//        // verify response is HTTP OK
-//        final int statusCode = response.getStatusLine().getStatusCode();
-//        if (statusCode != HttpStatus.SC_OK) {
-//            System.out.println("Error authenticating to Force.com: "+statusCode);
-//            // Error is in EntityUtils.toString(response.getEntity()) 
-//            //return;
-//        }
-//
-//        String getResult = null;
-//        try {
-//            getResult = EntityUtils.toString(response.getEntity());
-//        } catch (IOException ioException) {
-//            // Handle system IO exception
-//        }
-//        JSONObject jsonObject = null;
-//        String loginAccessToken = null;
-//        String loginInstanceUrl = null;
-//        try {
-//            jsonObject = (JSONObject) new JSONTokener(getResult).nextValue();
-//            loginAccessToken = jsonObject.getString("access_token");
-//            loginInstanceUrl = jsonObject.getString("instance_url");
-//        } catch (JSONException jsonException) {
-//            // Handle JSON exception
-//        }
-//        System.out.println(response.getStatusLine());
-//        System.out.println("Successful login");
-//        System.out.println("  instance URL: "+loginInstanceUrl);
-//        System.out.println("  access token/session ID: "+loginAccessToken);
-//        
-//        JSONObject task = new JSONObject();
-//        try {
-//        	task.put("contactPhoneNumber", "8186189493");
-//        	task.put("txtMessage", "This is from Java");
-//    task.put("taskType", "Txt Init");
-//		} catch (JSONException e) {
-//			e.printStackTrace();
-//			
-//		}
-//        HttpPost httpost = new HttpPost(loginInstanceUrl+ "/services/apexrest/HackathonTaskService/createTask");
-//        httpost.setConfig(config);
-//        httpost.addHeader("Authorization", "OAuth " + loginAccessToken);
-//        
-//        StringEntity messageEntity = new StringEntity( task.toString(),
-//				ContentType.create("application/json"));
-//
-//		httpost.setEntity(messageEntity);
-//		
-//		try {
-//            // Execute the login POST request
-//			CloseableHttpResponse closeableresponse = httpclient.execute(httpost); 
-//			System.out.println("Response Status line :" + closeableresponse.getStatusLine());
-//        } catch (ClientProtocolException cpException) {
-//            // Handle protocol exception
-//        	System.out.println("ClientProtocolException: "+cpException.getMessage());
-//        } catch (IOException ioException) {
-//            // Handle system IO exception
-//        	System.out.println("IOException: "+ioException.getMessage());
-//        }
-//		  
-//		 
-//		  
-//        // release connection
-//        httpPost.releaseConnection();
+
     }
     
     
