@@ -100,6 +100,7 @@ public class Main {
  String respondToSms( @RequestParam("Body") String smsInboundBody,  @RequestParam("From") String smsPhoneNumber) throws JsonProcessingException{
 	 Message message;
 	 writeSMSintoDB(smsInboundBody + " From Phonenumber: " + smsPhoneNumber);
+	 System.out.println(smsInboundBody + " From Phonenumber: " + smsPhoneNumber);
 	 if(Integer.parseInt(smsInboundBody)==1) { // for DEMO this is the marketing flow
 	     message = new Message.Builder()
 	             .body(new Body("Option: " + smsInboundBody + " Capital Group representative will contact you shortly. Thank you."))
@@ -129,8 +130,9 @@ public class Main {
 	 void writeSMSintoDB(String body){
 		    try (Connection connection = dataSource.getConnection()) {
 		        Statement stmt = connection.createStatement();
+		        System.out.println("Database updates");
 		        stmt.executeUpdate("CREATE TABLE IF NOT EXISTS messagesReceived (tick timestamp, body text)");
-		        stmt.executeUpdate("INSERT INTO messagesReceived VALUES (now(), "+body+")");
+		        System.out.println(stmt.executeUpdate("INSERT INTO messagesReceived VALUES (now(), "+body+")"));
 		        //ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
 
 //		        ArrayList<String> output = new ArrayList<String>();
