@@ -12,7 +12,7 @@
 							<p ng-if="hasError" class="error"><strong>Check your phone number</strong></p>
 							<dl>
 								<dt><label for="userid">Phone Number</label></dt>
-								<dd><input type="tel" placeholder="Enter Phone Number" value="(310) 309 0654"/></dd>
+								<dd><input type="tel" placeholder="Enter Phone Number" ng-model="tel" value="(310) 309 0654"/></dd>
 							</dl>
 						</div>
 
@@ -20,7 +20,7 @@
 							<div class="login-table-container">
 								<div class="login-table-row">
 									<div class="login-button-cell">
-									 	<a ui-sref="validation.phone-number" ui-sref-active="active" ui-sref-opts="{ reload: true }" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>Submit</a>
+									 	<a ui-sref="validation.phone-number({tel: tel})" ui-sref-active="active" ui-sref-opts="{ reload: true }" class="btn  btn-small state-site-tier-one state-site-default lock"><span class="icon"></span>Submit</a>
 									</div>
 								</div>
 							</div>
