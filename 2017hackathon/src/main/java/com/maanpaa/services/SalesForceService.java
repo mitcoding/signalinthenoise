@@ -15,6 +15,7 @@ import org.springframework.web.client.RestTemplate;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.maanpaa.domain.salesforce.LoginResponse;
+import com.maanpaa.domain.salesforce.NotesFromVisitRequest;
 import com.maanpaa.domain.salesforce.VisitResponse;
 import com.maanpaa.domain.salesforce.WelcomeRequest;
 import com.twilio.twiml.Method;
@@ -133,6 +134,45 @@ public class SalesForceService {
     	 //JSONObject task = new JSONObject();
     	 ObjectMapper mapper = new ObjectMapper();
     	 String welcomeRequestAsString = mapper.writeValueAsString(welcomeRequest);
+    	 
+    	 HttpEntity<String> entity = new HttpEntity<String>(welcomeRequestAsString ,headers);   	 
+    	 ResponseEntity<String> response = restTemplate.postForEntity(welcomeURL, entity, String.class, "");
+    	 System.out.println(response);
+
+    	
+    	 
+    	 
+		
+	}
+	public void postSalesFlowRatingToSalesForce(String visitId, String notes) throws JsonProcessingException {
+
+    	String loginURL = LOGINURL + 
+                 GRANTSERVICE + 
+                 "&client_id=" + CLIENTID + 
+                 "&client_secret=" + CLIENTSECRET +
+                 "&username=" + USERNAME +
+                 "&password=" + PASSWORD;
+    	 
+    	 
+    	 MultiValueMap<String, Object> map = new LinkedMultiValueMap<String, Object>();
+         HttpHeaders headers = new HttpHeaders();
+         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
+         HttpEntity<MultiValueMap<String,Object>> requestEntity = new HttpEntity<MultiValueMap<String, Object>>(map, headers);
+    	 LoginResponse loginResponse = restTemplate.postForObject(loginURL, requestEntity, LoginResponse.class);
+    	 
+    	 headers = new HttpHeaders();
+         headers.setContentType(MediaType.APPLICATION_JSON);   	   	 
+         headers.add("Authorization", "OAuth " + loginResponse.getAccessToken());         
+
+         NotesFromVisitRequest notesFromVisitRequest = new NotesFromVisitRequest();
+         notesFromVisitRequest.setVisitId("a0Hc0000008XLtpEAG"); // TODO change to visitID from previous call
+         notesFromVisitRequest.setVisitNotes("Visit was rated as 5."); //change to real rating
+         
+         
+    	 String welcomeURL = loginResponse.getInstanceUrl() + "/services/apexrest/HackathonVisitService/updateVisit";
+
+    	 ObjectMapper mapper = new ObjectMapper();
+    	 String welcomeRequestAsString = mapper.writeValueAsString(notesFromVisitRequest);
     	 
     	 HttpEntity<String> entity = new HttpEntity<String>(welcomeRequestAsString ,headers);   	 
     	 ResponseEntity<String> response = restTemplate.postForEntity(welcomeURL, entity, String.class, "");

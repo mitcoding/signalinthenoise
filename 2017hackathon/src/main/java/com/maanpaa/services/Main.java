@@ -16,6 +16,7 @@
 
 package com.maanpaa.services;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.twilio.twiml.Body;
 import com.twilio.twiml.Message;
 import com.twilio.twiml.MessagingResponse;
@@ -50,6 +51,9 @@ public class Main {
   @Autowired
   private DataSource dataSource;
 
+  @Autowired
+  private SalesForceService salesForceService;
+  
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
   }
@@ -93,17 +97,20 @@ public class Main {
 
  @RequestMapping(value="/sms", produces = "application/xml;charset=UTF-8")
  @ResponseBody
- String respondToSms( @RequestParam("Body") String smsInboundBody){
+ String respondToSms( @RequestParam("Body") String smsInboundBody,  @RequestParam("From") String smsPhoneNumber) throws JsonProcessingException{
 	 Message message;
-	 writeSMSintoDB(smsInboundBody);
-	 if(Integer.parseInt(smsInboundBody)==1) 
+	 writeSMSintoDB(smsInboundBody + " From Phonenumber: " + smsPhoneNumber);
+	 if(Integer.parseInt(smsInboundBody)==1) { // for DEMO this is the marketing flow
 	     message = new Message.Builder()
 	             .body(new Body("Option: " + smsInboundBody + " Capital Group representative will contact you shortly. Thank you."))
 	             .build();
-	 else
+	 }
+	 else { // for DEMO we assume this is wholesaler flow
 		 message = new Message.Builder()
-				 .body(new Body("Option: " + smsInboundBody + " Please reply with name/s of literature you are requesting? Thank you."))
+				 .body(new Body("Thanks you. Please REPLY 1-5 How useful were the insights provided by the PIT crew?"))
 	             .build();
+		 salesForceService.postSalesFlowRatingToSalesForce("id", "5");
+	 }
 
      MessagingResponse twiml = new MessagingResponse.Builder()
              .message(message)
