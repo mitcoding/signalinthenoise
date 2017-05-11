@@ -87,7 +87,7 @@ public class SalesForceService {
          HttpEntity<MultiValueMap<String,Object>> requestEntity2 = new HttpEntity<MultiValueMap<String, Object>>(null, headers);
     	 
     	 
-    	 String visitDetailURL = loginResponse.getInstanceUrl() + "/services/apexrest/HackathonVisitService/getVisitDetail?userEmail=pdv@capgroup.com";
+    	 String visitDetailURL = loginResponse.getInstanceUrl() + "/services/apexrest/HackathonVisitService/getVisitDetail?userEmail=aras@capgroup.com";
     	 
     	 //String visitResponse = restTemplate.getForObject(visitDetailURL, String.class);
     	 
@@ -165,7 +165,7 @@ public class SalesForceService {
          headers.add("Authorization", "OAuth " + loginResponse.getAccessToken());         
 
          NotesFromVisitRequest notesFromVisitRequest = new NotesFromVisitRequest();
-         notesFromVisitRequest.setVisitId("a0Hc0000008XLtpEAG"); // TODO change to visitID from previous call
+         notesFromVisitRequest.setVisitId("a0Hc0000008XLtzEAG"); // TODO change to visitID from previous call
          notesFromVisitRequest.setVisitNotes("Visit was rated as 5."); //change to real rating
          
          
