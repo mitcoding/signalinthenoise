@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'db')}">
-
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'db', ~{::title})}">
+<head>
+  	<title>DB Fields | American Funds</title>
+</head>
+ 
 <body>
     <script src="../../../dist/Chart.bundle.js"></script>
     <script src="../../utils.js"></script>
