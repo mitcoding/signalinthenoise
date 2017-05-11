@@ -27,7 +27,7 @@ public class UIRestService {
     public String contact(@RequestParam(value="number", defaultValue="3103090654") String name) throws URISyntaxException, JsonProcessingException {
     	salesForceService.postMarketingFlowStartToSalesForce("3103090654");
     	sMSSender.sendMarketingFlowStart();
-    	return "received your UI call";
+    	return "{\"message\":\"received your UI call\"}";
         //return new String(counter.incrementAndGet(),
         //                    String.format(template, name));
     }
