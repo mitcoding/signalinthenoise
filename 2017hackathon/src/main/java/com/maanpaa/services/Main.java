@@ -132,7 +132,7 @@ public class Main {
 		        Statement stmt = connection.createStatement();
 		        System.out.println("Database updates");
 		        stmt.executeUpdate("CREATE TABLE IF NOT EXISTS messagesReceived (tick timestamp, body text)");
-		        System.out.println(stmt.executeUpdate("INSERT INTO messagesReceived VALUES (now(), "+body+")"));
+		        System.out.println(stmt.executeUpdate("INSERT INTO messagesReceived VALUES (now(), '"+body+"')"));
 		        //ResultSet rs = stmt.executeQuery("SELECT tick FROM ticks");
 
 //		        ArrayList<String> output = new ArrayList<String>();
