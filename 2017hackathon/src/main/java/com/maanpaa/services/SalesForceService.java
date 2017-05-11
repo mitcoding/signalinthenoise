@@ -137,13 +137,7 @@ public class SalesForceService {
     	 HttpEntity<String> entity = new HttpEntity<String>(welcomeRequestAsString ,headers);   	 
     	 ResponseEntity<String> response = restTemplate.postForEntity(welcomeURL, entity, String.class, "");
     	 System.out.println(response);
-         //ResponseEntity<VisitResponse> response = restTemplate.exchange(visitDetailURL, HttpMethod.GET, entity, VisitResponse.class);
-         //System.out.println(response.getBody().getVisitId());
-         //System.out.println("Result - status ("+ response.getStatusCode() + ") has body: " + response.hasBody());
-         //return response.getBody();
-    	 
-    	 
-    	// System.out.println(visitResponse);
+
     	
     	 
     	 
