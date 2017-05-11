@@ -74,7 +74,7 @@ textMeApp.config(function($stateProvider, $urlRouterProvider) {
 	    			},
 	    			function(error) {
 	    				console.log(["phoneValidation.error: ", error]);
-	    				return error;
+	    				return {data: {} };
 	    			}
 	    		);
 	    	}
