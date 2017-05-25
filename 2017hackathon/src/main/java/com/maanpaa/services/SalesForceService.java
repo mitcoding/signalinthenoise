@@ -30,12 +30,12 @@ public class SalesForceService {
     static final String CLIENTID     = "3MVG9sLbBxQYwWqui2n5ePG2HPxaKhHnHgyxPc6PuRQQ6bXbwhCCmKI06PMNMPk2kET7.2QaFZA8Px1NwFgBp";
     static final String CLIENTSECRET = "7189007724647142878";*/
 	
-	static final String USERNAME     = "im@capgroup.com.pc";
-    static final String PASSWORD     = "March@2017OPJH4n7SDmRFleoQMPkqvDoWz";
+	static final String USERNAME     = "";
+    static final String PASSWORD     = ";
     static final String LOGINURL     = "https://test.salesforce.com";
-    static final String GRANTSERVICE = "/services/oauth2/token?grant_type=password";
-    static final String CLIENTID     = "3MVG9sLbBxQYwWqv75QmkNfDKKEgf0XnD4DQnbohdHSKqE8CCuRNLCMWwWgGAP8F7lxJ3VAPkebekcJytljZ5";
-    static final String CLIENTSECRET = "6036447754653987113";
+    static final String GRANTSERVICE = "";
+    static final String CLIENTID     = "";
+    static final String CLIENTSECRET = "";
 
 
 	private RestTemplate restTemplate;
